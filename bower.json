@@ -6,7 +6,7 @@
   "main": "dist/bootstrap.css",
   "themestrap": {
     "name": "Lobes - for MusicBrainz",
-    "repo": "https://github.com/divshot/themestrap"
+    "repo": "https://github.com/MonkeyDo/lobes"
   },
   "ignore": [
     "**/.*",
