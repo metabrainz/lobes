@@ -1,11 +1,11 @@
 {
-  "name": "bootstrap-theme-themestrap-sample",
+  "name": "bootstrap-theme-lobes",
   "version": "0.0.1",
   "private": true,
-  "author": "Your Name",
+  "author": "{Monkey.Do}",
   "main": "dist/bootstrap.css",
   "themestrap": {
-    "name": "Themestrap Sample",
+    "name": "Lobes - for MusicBrainz",
     "repo": "https://github.com/divshot/themestrap"
   },
   "ignore": [
