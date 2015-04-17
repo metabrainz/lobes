@@ -24,7 +24,7 @@ module.exports = (grunt) ->
         files: ['dist/css/bootstrap.css']
         tasks: ['cssmin:minify']
       assemble:
-        files: ['pages/*.html', 'pages/examples/*', 'README.md']
+        files: ['pages/*.html', 'pages/examples/*', 'assets/**/*', 'README.md']
         tasks: ['assemble']
     cssmin:
       minify:
@@ -51,7 +51,8 @@ module.exports = (grunt) ->
       bootstrap:
         files: [
           { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/less', src: ['bootstrap.less'], dest: 'tmp/' },
-          { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/fonts', src: ['*'], dest: 'dist/fonts' }
+          { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/fonts', src: ['*'], dest: 'dist/fonts' },
+          {expand: true, cwd: 'assets', src: ['*'], dest: 'dist/assets'}
         ]
     clean: ['tmp']
 
