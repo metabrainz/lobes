@@ -26,6 +26,8 @@ module.exports = (grunt) ->
       assemble:
         files: ['pages/*.html', 'pages/examples/*', 'assets/**/*', 'README.md']
         tasks: ['assemble']
+        options:
+          livereload: true
     cssmin:
       minify:
         expand: true
