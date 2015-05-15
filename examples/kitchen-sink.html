@@ -16,7 +16,7 @@
   </head>
   
   <body>
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top MetaBrainz">
       <div class="container">
         
         <div class="navbar-header">
@@ -26,8 +26,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
-             <img class="extrasmall logo" src="../dist/assets/MusicBrainz_logo_web_extrasmall_white-text.png" alt=" Lobes - for MusicBrainz"></img>
+          <a class="navbar-brand logo" href="#">
+             <img class="extrasmall logo" src="../dist/assets/MetaBrainz_logo_web_extrasmall.png" alt=" Lobes - for MusicBrainz"></img>
              <img class="small logo" src="../dist/assets/MusicBrainz_logo_web_small_white-text.png" alt=" Lobes - for MusicBrainz"></img>
           </a>
         </div>
@@ -86,7 +86,7 @@
            <small><br/>Kitchen Sink</small>
          </h1>
         <p>A quick preview of everything Bootstrap has to offer.</p>
-        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <p><a class="btn btn-primary btn-lg" href="#">Learn more &raquo;</a></p>
       </div>
       <div class="row">
         <div class="col-lg-4">
@@ -139,7 +139,7 @@
             <h1>This is an h1 heading</h1>
             <h2>This is an h2 heading</h2>
             <h3>This is an h3 heading</h3>
-            <h4>This is an h4 heading</h4>
+            <h4 class="hexagonBullet">This is an h4 heading with a hexagon bullet</h4>
             <h5>This is an h5 heading</h5>
             <h6>This is an h6 heading</h6>
             <h6>CУЯILLIC FФИT SЦPPФЯT TЗST</h6>
@@ -510,16 +510,16 @@
         </div>
         <div class="col-lg-6" id="navbar">
           <div class="panel panel-default">
-            <div class="panel-heading">Navbar
+            <div class="panel-heading">Navbars
             </div>
             <div class="panel-body">
             <p></p>
             <div class="navbar navbar-default">
               <div class="navbar-header">
-                <a href="#" class="navbar-brand">Your Company</a>
+                <a href="#" class="navbar-brand">Standard</a>
               </div>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
                   <li class="active">
                     <a href="#">Home</a>
                   </li>
@@ -530,14 +530,17 @@
                     <a href="#">Contact</a>
                   </li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                </ul>
               </div>
             </div>
-            <div class="navbar navbar-inverse">
+            <div class="navbar navbar-default MusicBrainz">
               <div class="navbar-header">
-                <a href="#" class="navbar-brand">Your Company</a>
+                <a href="#" class="navbar-brand">MusicBrainz</a>
               </div>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
                   <li class="active">
                     <a href="#">Home</a>
                   </li>
@@ -547,6 +550,72 @@
                   <li>
                     <a href="#">Contact</a>
                   </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar navbar-default MetaBrainz">
+              <div class="navbar-header">
+                <a href="#" class="navbar-brand">MetaBrainz</a>
+              </div>
+              <div class="navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active">
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar navbar-default CritiqueBrainz">
+              <div class="navbar-header">
+                <a href="#" class="navbar-brand">CritiqueBrainz</a>
+              </div>
+              <div class="navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active">
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar navbar-default AcousticBrainz">
+              <div class="navbar-header">
+                <a href="#" class="navbar-brand">AcousticBrainz</a>
+              </div>
+              <div class="navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active">
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
@@ -762,7 +831,7 @@
         </div>
         <div class="col-lg-3">
           <div class="panel panel-danger">
-            <div class="panel-heading">This is a header
+            <div class="panel-heading hexagonBullet">This is a header with a hexagon bullet
             </div>
             <div class="panel-body">This is a panel</div>
             <div class="panel-footer">This is a footer
@@ -824,8 +893,11 @@
     <script type="text/javascript">
       var navbar = document.getElementsByClassName('navbar-fixed-top')[0];
       var navbarClasses = navbar.className;
-      navbar.className = navbarClasses + " tall";
-      window.onscroll=function(){menuSize(navbar)}
+      if (hasClass(navbar, "animated")) {
+        navbar.className = navbarClasses + " tall";
+        document.getElementsByTagName("body")[0].className = document.getElementsByTagName("body")[0].className + " withTallNavbar";
+        window.onscroll=function(){menuSize(navbar)}
+      }
       function menuSize(element)
       {
           var scrollBarPosition = window.pageYOffset | document.body.scrollTop;
@@ -835,6 +907,9 @@
               element.className = navbarClasses + " tall";
           else
               element.className = navbarClasses;
+      }
+      function hasClass(el, cls) {
+        return el.className && new RegExp("(\\s|^)" + cls + "(\\s|$)").test(el.className);
       }
     </script>
   </body>
