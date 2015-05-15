@@ -10,6 +10,7 @@ a{
     &:visited:not(.btn){
         color: @link-visited-color;
     }
+    
     // Exceptions to :visited state
     &.list-group-item:visited{
         color:@list-group-link-color;
@@ -74,5 +75,8 @@ a{
         &:focus {
             color: @pagination-disabled-color;
         }
+    }
+    &.alert-link:visited{
+        color: inherit;
     }
 }

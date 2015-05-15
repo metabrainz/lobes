@@ -6378,6 +6378,9 @@ a.list-group-item:visited.active:focus {
 .pagination > .disabled > a:visited:focus {
   color: #dbccc6;
 }
+a.alert-link:visited {
+  color: inherit;
+}
 .btn {
   border: 0;
   border-radius: 0;
@@ -6659,7 +6662,7 @@ a.list-group-item:visited.active:focus {
 body.MetaBrainz .navbar,
 .navbar.MetaBrainz {
   color: #ffffff;
-  background: rgba(90, 168, 84, 0.8);
+  background: rgba(0, 146, 19, 0.8);
   border: none;
 }
 body.MetaBrainz .navbar .navbar-nav > li > a,
@@ -6671,7 +6674,7 @@ body.MetaBrainz .navbar .navbar-nav > li > a:hover,
 body.MetaBrainz .navbar .navbar-nav > li > a:focus,
 .navbar.MetaBrainz .navbar-nav > li > a:focus {
   color: #ffffff;
-  background-color: rgba(90, 168, 84, 0.9);
+  background-color: rgba(0, 146, 19, 0.9);
 }
 body.MetaBrainz .navbar .navbar-nav > .active > a,
 .navbar.MetaBrainz .navbar-nav > .active > a,
@@ -6680,7 +6683,7 @@ body.MetaBrainz .navbar .navbar-nav > .active > a:hover,
 body.MetaBrainz .navbar .navbar-nav > .active > a:focus,
 .navbar.MetaBrainz .navbar-nav > .active > a:focus {
   color: #fffbfe;
-  background-color: rgba(90, 168, 84, 0.9);
+  background-color: rgba(0, 146, 19, 0.9);
 }
 body.MetaBrainz .navbar .navbar-nav > .disabled > a,
 .navbar.MetaBrainz .navbar-nav > .disabled > a,
@@ -6689,7 +6692,7 @@ body.MetaBrainz .navbar .navbar-nav > .disabled > a:hover,
 body.MetaBrainz .navbar .navbar-nav > .disabled > a:focus,
 .navbar.MetaBrainz .navbar-nav > .disabled > a:focus {
   color: #ffffff;
-  background-color: #7e7e7e;
+  background-color: #1f732a;
 }
 body.MetaBrainz .navbar .navbar-nav > .open > a,
 .navbar.MetaBrainz .navbar-nav > .open > a,
@@ -6697,7 +6700,7 @@ body.MetaBrainz .navbar .navbar-nav > .open > a:hover,
 .navbar.MetaBrainz .navbar-nav > .open > a:hover,
 body.MetaBrainz .navbar .navbar-nav > .open > a:focus,
 .navbar.MetaBrainz .navbar-nav > .open > a:focus {
-  background-color: rgba(90, 168, 84, 0.9);
+  background-color: rgba(0, 146, 19, 0.9);
   color: #ffffff;
 }
 body.MetaBrainz .navbar .navbar-nav > .dropdown > a:hover .caret,
@@ -6722,7 +6725,7 @@ body.MetaBrainz .navbar .navbar-nav > .open > a:focus .caret,
 @media (max-width: 767px) {
   body.MetaBrainz .navbar .navbar-nav .open .dropdown-menu > .dropdown-header,
   .navbar.MetaBrainz .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #5aa854;
+    border-color: #009213;
   }
   body.MetaBrainz .navbar .navbar-nav .open .dropdown-menu > li > a,
   .navbar.MetaBrainz .navbar-nav .open .dropdown-menu > li > a {
@@ -6733,7 +6736,7 @@ body.MetaBrainz .navbar .navbar-nav > .open > a:focus .caret,
   body.MetaBrainz .navbar .navbar-nav .open .dropdown-menu > li > a:focus,
   .navbar.MetaBrainz .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #ffffff;
-    background-color: rgba(90, 168, 84, 0.9);
+    background-color: rgba(0, 146, 19, 0.9);
   }
   body.MetaBrainz .navbar .navbar-nav .open .dropdown-menu > .active > a,
   .navbar.MetaBrainz .navbar-nav .open .dropdown-menu > .active > a,
@@ -6742,7 +6745,7 @@ body.MetaBrainz .navbar .navbar-nav > .open > a:focus .caret,
   body.MetaBrainz .navbar .navbar-nav .open .dropdown-menu > .active > a:focus,
   .navbar.MetaBrainz .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: rgba(90, 168, 84, 0.9);
+    background-color: rgba(0, 146, 19, 0.9);
   }
   body.MetaBrainz .navbar .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar.MetaBrainz .navbar-nav .open .dropdown-menu > .disabled > a,
@@ -6751,12 +6754,12 @@ body.MetaBrainz .navbar .navbar-nav > .open > a:focus .caret,
   body.MetaBrainz .navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus,
   .navbar.MetaBrainz .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #ffffff;
-    background-color: #7e7e7e;
+    background-color: #1f732a;
   }
 }
 body.MetaBrainz .navbar .navbar-collapse,
 .navbar.MetaBrainz .navbar-collapse {
-  border-color: #5aa854;
+  border-color: #009213;
 }
 body.MetaBrainz .navbar .navbar-brand,
 .navbar.MetaBrainz .navbar-brand {
@@ -6788,7 +6791,7 @@ body.MetaBrainz .navbar .navbar-link:hover,
 }
 body.MetaBrainz .navbar .support-link > a,
 .navbar.MetaBrainz .support-link > a {
-  background-color: #5aa854;
+  background-color: #009213;
 }
 body.MusicBrainz .navbar,
 .navbar.MusicBrainz {
