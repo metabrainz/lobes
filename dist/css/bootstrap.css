@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,300,700|Sintony:200,400,700&subset=latin,latin-ext,cyrillic,cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,400,300,700|Sintony:200,400,700&subset=latin,latin-ext,cyrillic,cyrillic-ext);
 /*!
  * Your Theme Name v0.1.0
  *
@@ -6611,6 +6611,9 @@ a.alert-link:visited {
 .navbar-default .navbar-link:hover {
   color: #fffbfe;
 }
+.navbar-default .navbar-form {
+  margin: 0;
+}
 .navbar-default .support-link > a {
   color: #fffbfe !important;
   background-color: #eb743b;
@@ -6774,6 +6777,10 @@ body.MetaBrainz .navbar .navbar-link,
 body.MetaBrainz .navbar .navbar-link:hover,
 .navbar.MetaBrainz .navbar-link:hover {
   color: #fffbfe;
+}
+body.MetaBrainz .navbar .navbar-form,
+.navbar.MetaBrainz .navbar-form {
+  margin: 0;
 }
 body.MetaBrainz .navbar .support-link > a,
 .navbar.MetaBrainz .support-link > a {
@@ -6960,6 +6967,10 @@ body.MusicBrainz .navbar .navbar-link:hover,
 .navbar.MusicBrainz .navbar-link:hover {
   color: #fffbfe;
 }
+body.MusicBrainz .navbar .navbar-form,
+.navbar.MusicBrainz .navbar-form {
+  margin: 0;
+}
 body.MusicBrainz .navbar .support-link > a,
 .navbar.MusicBrainz .support-link > a {
   color: #fffbfe !important;
@@ -7125,6 +7136,10 @@ body.CritiqueBrainz .navbar .navbar-link:hover,
 .navbar.CritiqueBrainz .navbar-link:hover {
   color: #fffbfe;
 }
+body.CritiqueBrainz .navbar .navbar-form,
+.navbar.CritiqueBrainz .navbar-form {
+  margin: 0;
+}
 body.CritiqueBrainz .navbar .support-link > a,
 .navbar.CritiqueBrainz .support-link > a {
   color: #fffbfe !important;
@@ -7289,6 +7304,10 @@ body.AcousticBrainz .navbar .navbar-link,
 body.AcousticBrainz .navbar .navbar-link:hover,
 .navbar.AcousticBrainz .navbar-link:hover {
   color: #fffbfe;
+}
+body.AcousticBrainz .navbar .navbar-form,
+.navbar.AcousticBrainz .navbar-form {
+  margin: 0;
 }
 body.AcousticBrainz .navbar .support-link > a,
 .navbar.AcousticBrainz .support-link > a {
