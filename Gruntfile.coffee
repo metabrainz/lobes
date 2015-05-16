@@ -6,6 +6,7 @@ module.exports = (grunt) ->
         options:
           compress: false
           paths: ['less', 'tmp', '<%= bowerDirectory %>/bootstrap/less']
+          plugins : [require('less-plugin-autoprefix')({browsers: ["last 4 versions"]})]
         files:
           'dist/css/bootstrap.css': ['less/theme.less']
     recess:
