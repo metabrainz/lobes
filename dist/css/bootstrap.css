@@ -7320,6 +7320,98 @@ body.AcousticBrainz .navbar .support-link > a,
     padding-top: 40px;
   }
 }
+.metaCarousel:not(.iHaveJavascript) .item:not(.active),
+.metaCarousel:not(.iHaveJavascript) .item:not(.active) * {
+  display: none;
+  height: 0;
+}
+.metaCarousel .carousel {
+  position: relative;
+  perspective: 1000;
+}
+.metaCarousel .carousel .item {
+  width: 100%;
+}
+.metaCarousel .carousel .item img {
+  transition: 0.45s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform-origin: 100% 75px;
+  /* half of height */
+
+  backface-visibility: hidden;
+}
+.metaCarousel .carousel .item .caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  transition: opacity 0.45s;
+}
+.metaCarousel .carousel .active,
+.metaCarousel .carousel .next.left,
+.metaCarousel .carousel .prev.right {
+  left: initial;
+}
+.metaCarousel .carousel .active img,
+.metaCarousel .carousel .next.left img,
+.metaCarousel .carousel .prev.right img {
+  transform: rotateX(0deg);
+  z-index: 2;
+}
+.metaCarousel .carousel .active .caption,
+.metaCarousel .carousel .next.left .caption,
+.metaCarousel .carousel .prev.right .caption {
+  opacity: 1;
+}
+.metaCarousel .carousel .next,
+.metaCarousel .carousel .active.right {
+  left: initial;
+}
+.metaCarousel .carousel .next img,
+.metaCarousel .carousel .active.right img {
+  position: absolute;
+  transform: rotateX(-180deg);
+}
+.metaCarousel .carousel .next .caption,
+.metaCarousel .carousel .active.right .caption {
+  opacity: 0;
+}
+.metaCarousel .carousel .prev,
+.metaCarousel .carousel .active.left {
+  left: initial;
+}
+.metaCarousel .carousel .prev img,
+.metaCarousel .carousel .active.left img {
+  transform: rotateX(180deg);
+}
+.metaCarousel .carousel .prev .caption,
+.metaCarousel .carousel .active.left .caption {
+  opacity: 0;
+}
+.metaCarousel .carousel-control {
+  background: none;
+}
+.metaCarousel .carousel-control span {
+  color: #46433a;
+}
+.metaCarousel .carousel-inner {
+  min-height: 350px;
+}
+.metaCarousel .item {
+  min-height: 350px;
+}
+.metaCarousel .item .carousel-caption {
+  margin-top: 160px;
+}
+.metaCarousel .item > img {
+  padding-top: 25px;
+  padding-left: 15%;
+}
 .corporate-background {
   background: url(../assets/background_tile.jpg) rgba(219, 204, 198, 0.6);
   background-blend-mode: screen;
