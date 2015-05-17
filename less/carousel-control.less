@@ -3,11 +3,18 @@
 
 .metaCarousel{
 	&:not(.iHaveJavasript){
+		.carousel-control,
 		.item:not(.active){
 			&, & *{
 				display: none;
 				height: 0;
 			}
+		}
+		.item img{
+			padding: 0;
+			padding-top: 25px;
+			margin: 0 auto;
+			transition: none;
 		}
 	}
 	.carousel{
