@@ -7320,10 +7320,18 @@ body.AcousticBrainz .navbar .support-link > a,
     padding-top: 40px;
   }
 }
+.metaCarousel:not(.iHaveJavasript) .carousel-control,
 .metaCarousel:not(.iHaveJavasript) .item:not(.active),
+.metaCarousel:not(.iHaveJavasript) .carousel-control *,
 .metaCarousel:not(.iHaveJavasript) .item:not(.active) * {
   display: none;
   height: 0;
+}
+.metaCarousel:not(.iHaveJavasript) .item img {
+  padding: 0;
+  padding-top: 25px;
+  margin: 0 auto;
+  transition: none;
 }
 .metaCarousel .carousel {
   position: relative;
