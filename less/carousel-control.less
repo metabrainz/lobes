@@ -2,6 +2,14 @@
 @animation-speed : 0.45s;
 
 .metaCarousel{
+	&:not(.iHaveJavascript){
+		.item:not(.active){
+			&, & *{
+				display: none;
+				height: 0;
+			}
+		}
+	}
 	.carousel{
 		position: relative;
 		perspective: 1000;
