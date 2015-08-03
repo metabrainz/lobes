@@ -8,8 +8,8 @@
   border: 0;
   border-radius:0;
   transition: all 0.2s;
-  margin: 0.15em;
-  .button-size(@padding-small-vertical; @padding-small-horizontal * 2 ; @font-size-small; @line-height-small; 0px);
+  margin: -0.15em;
+  .button-size(@padding-base-vertical; @padding-base-horizontal * 2 ; @font-size-base; @line-height-small; 0px);
 }
 
 // Button variants
@@ -142,4 +142,9 @@
   border-left: 1px solid @btn-primary-bg;
   border-right: 1px solid @btn-primary-bg;
   color: @btn-primary-bg;
+}
+
+.input-group-btn > .btn {
+  border-radius: 2px;
+  padding: 6px 12px;
 }
