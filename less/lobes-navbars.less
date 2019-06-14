@@ -2,8 +2,8 @@
 
 .navbar-variant(@color; @logo-width:200px; @active-color:@white) {
   @active-bg: @color;
-  @disabled-color: desaturate(@color,42%);
-  @disabled-bg: @disabled-color;
+  @disabled-bg: lighten(desaturate(@color,10%),42%);
+  @disabled-color: lighten(@disabled-bg,15%);
   @link-color:@color;
 
   background: none;
