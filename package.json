@@ -1,18 +1,11 @@
 {
   "name": "lobes",
   "version": "0.3.0",
-  "devDependencies": {
-    "assemble": "~0.4.4",
-    "bower": "~1.1.0",
-    "grunt": "~0.4.1",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-connect": "~0.3.0",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-cssmin": "~0.6.1",
-    "grunt-contrib-less": "~0.6.4",
-    "grunt-contrib-watch": "~0.4.4",
-    "grunt-recess": "~0.3.5",
-    "grunt-text-replace": "~0.3.2",
-    "less-plugin-autoprefix": "^1.4.1"
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "sass": "^1.32.5"
+  },
+  "scripts": {
+    "start": "sass --watch scss:dist/css -I ./ & npx serve -p 5001"
   }
 }
