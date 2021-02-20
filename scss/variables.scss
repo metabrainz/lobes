@@ -1,0 +1,170 @@
+// ------ //
+// Colors //
+// ------ //
+
+$white:       #FFFFFF;
+$gray-100:    #FDF9FB;
+$gray-200:    #F9F6F5;
+$gray-300:    #EAE7E5;
+$gray-400:    #D5D2CF;
+$gray-500:    #A7A49F;
+$gray-600:    #8d8d8d;
+$gray-700:    #3F3C34;
+$gray-800:    #3B3831;
+$gray-900:    #46433A;
+$black:       #000;
+
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+);
+
+$orange:      #eb743b;
+$purple:      #ba478f;
+$green:	      #5aa854;
+$blue:	      #4e7ec2;
+$yellow:      #EA9D11;
+$red:		      #c64040;
+$cyan:        #36b5b2;
+$dark-purple: #771b85;
+$brown:       #754e37;
+$teal:        #20656c;
+$navy:        #353070;
+
+$colors: (
+  "blue":       $blue,
+  "purple":     $purple,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+
+$musicbrainz:     $purple;
+$metabrainz:      $green;
+$critiquebrainz:  $cyan;
+$acousticbrainz:  $blue;
+$picard:          $dark-purple;
+$bookbrainz:      $brown;
+$coverartarchive: $teal;
+$listenbrainz:    $navy;
+
+$primary:         $orange;
+$secondary:       $gray-900;
+$success:         $green;
+$warning:         $yellow;
+$danger:          $red;
+$info:            $blue;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger
+);
+
+// ------------------ //
+// Bootstrap Switches //
+// ------------------ //
+
+$enable-shadows: true;
+
+// ----- //
+// Sizes //
+// ----- //
+
+$alert-padding-x:           1.0000rem;
+$alert-padding-y:           1.0000rem;
+$badge-border-radius:       0.2500rem;
+$border-radius-lg:          0.2500rem;
+$border-radius-sm:          0.0625rem;
+$border-radius:             0.1250rem;
+$btn-border-radius-lg:      0;
+$btn-border-radius-sm:      0;
+$btn-border-radius:         0;
+$btn-border-width:          0px;
+$card-spacer-x:             0.8750rem;
+$card-spacer-y:             1.2500rem;
+$code-font-size:            90%;
+$font-size-base:            0.8750rem; // Default is 1rem ~ 16px - change to 0.875rem to get 14px
+$input-btn-focus-width:     6px;
+$input-btn-font-size:       $font-size-base * (12 / 14);
+$input-btn-padding-x-lg:    2.0000rem;
+$input-btn-padding-x-sm:    0.8000rem;
+$input-btn-padding-x:       1.0000rem;
+$lead-font-size:            $font-size-base * 1.5;
+$list-group-item-padding-x: 0.875rem;
+$logo-height:               30px; // Unfortunately necessary for accurate logo padding
+$padding-small-horizontal:  10px;
+$padding-small-vertical:    5px;
+$progress-height:           1.2500rem;
+$small-font-size:           85%;
+$table-cell-padding-sm:     5px;
+$table-cell-padding:        8px;
+$grid-gutter-width:         42px;
+
+$container-max-widths: (
+  sm: 540px + $grid-gutter-width,
+  md: 720px + $grid-gutter-width,
+  lg: 960px + $grid-gutter-width,
+  xl: 1140px + $grid-gutter-width
+);
+
+// ----- //
+// Other //
+// ----- //
+
+
+$headings-font-weight: 300;
+
+$headings-line-height: 1.3;
+
+$font-family-sans-serif: 'Sintony', sans-serif;
+$font-family-monospace:  'Monaco', 'Menlo', 'Consolas', "Courier New", monospace;
+$font-family-base:       $font-family-sans-serif;
+
+$headings-font-family:    'Roboto', sans-serif;
+
+
+$card-bg:                    lighten($white,6%);
+
+
+$code-color: #c7254e;
+
+$fa-font-path:        "../webfonts";
+
+$input-btn-focus-color: $blue;
+$input-btn-focus-box-shadow: 0 0 $input-btn-focus-width $input-btn-focus-color;
+
+$input-focus-border-color: darken($blue, 10%);
+
+$light: $gray-200;
+
+$line-height-base: 1.428571429;
+
+$link-color: $blue;
+$link-hover-color:      lighten($link-color, 12%);
+
+
+$navbar-light-active-color: white;
+
+
+$carousel-caption-color: $gray-900;
+$carousel-control-color: $gray-900;
+$carousel-transition-duration: 0.45s;
+
+$jumbotron-padding: 3rem;
