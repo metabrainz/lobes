@@ -18,62 +18,59 @@
   </head>
   
   <body>
-    <div class="navbar navbar-default navbar-static-top MetaBrainz">
+    <div class="navbar navbar-expand-lg navbar-light navbar-static-top MetaBrainz">
       <div class="container">
-        
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".header-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand logo" href="#">
-             <img src="../dist/assets/MetaBrainz_logo_mini.svg" alt=" Lobes - for MusicBrainz"></img>
-             </a>
-        </div>
-        
+        <a class="navbar-brand logo" href="#">
+            <img src="../dist/assets/MetaBrainz_logo_mini.svg" alt=" Lobes - for MusicBrainz"></img>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".header-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
         <div class="collapse navbar-collapse header-collapse">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#colors">Colors</a></li>
-                <li><a href="#headings">Headings</a></li>
-                <li><a href="#content-formatting">Content</a></li>
-                <li><a href="#tables">Tables</a></li>
-                <li><a href="#forms">Forms</a></li>
-                <li><a href="#images">Images</a></li>
-              </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">CSS <span class="caret"></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#colors">Colors</a>
+                <a class="dropdown-item" href="#headings">Headings</a>
+                <a class="dropdown-item" href="#content-formatting">Content</a>
+                <a class="dropdown-item" href="#tables">Tables</a>
+                <a class="dropdown-item" href="#forms">Forms</a>
+                <a class="dropdown-item" href="#images">Images</a>
+              </div>
             </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#dropdowns">Dropdowns</a></li>
-                <li><a href="#input-groups">Input Groups</a></li>
-                <li><a href="#navs">Navs</a></li>
-                <li><a href="#navbar">Navbar</a></li>
-                <li><a href="#pagination">Pagination</a></li>
-                <li><a href="#alerts">Alerts</a></li>
-                <li><a href="#labels">Labels</a></li>
-                <li><a href="#progress">Progress</a></li>
-                <li><a href="#media-object">Media Object</a></li>
-                <li><a href="#list-groups">List Groups</a></li>
-                <li><a href="#panels">Panels</a></li>
-                <li><a href="#wells">Wells</a></li>
-              </ul>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Components <span class="caret"></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#dropdowns">Dropdowns</a>
+                <a class="dropdown-item" href="#input-groups">Input Groups</a>
+                <a class="dropdown-item" href="#navs">Navs</a>
+                <a class="dropdown-item" href="#navbar">Navbar</a>
+                <a class="dropdown-item" href="#pagination">Pagination</a>
+                <a class="dropdown-item" href="#alerts">Alerts</a>
+                <a class="dropdown-item" href="#labels">Labels</a>
+                <a class="dropdown-item" href="#progress">Progress</a>
+                <a class="dropdown-item" href="#media-object">Media Object</a>
+                <a class="dropdown-item" href="#list-groups">List Groups</a>
+                <a class="dropdown-item" href="#panels">Panels</a>
+                <a class="dropdown-item" href="#wells">Wells</a>
+              </div>
             </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Source <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-header">CSS Files</li>
-                <li><a href="../dist/css/bootstrap.css">bootstrap.css</a></li>
-                <li><a href="../dist/css/bootstrap.min.css">bootstrap.min.css</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">LESS Files</li>
-                <li><a href="../less/variables.less">variables.less</a></li>
-                <li><a href="../less/theme.less">theme.less</a></li>
-              </ul>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Source <span class="caret"></span></a>
+              <div class="dropdown-menu">
+                <h6 class="dropdown-header">CSS Files</h6>
+                <a class="dropdown-item" href="../dist/css/bootstrap.css">bootstrap.css</a>
+                <a class="dropdown-item" href="../dist/css/bootstrap.min.css">bootstrap.min.css</a>
+                <div class="dropdown-divider"></div>
+                <h6 class="dropdown-header">LESS Files</h6>
+                <a class="dropdown-item" href="../less/variables.less">variables.less</a>
+                <a class="dropdown-item" href="../less/theme.less">theme.less</a>
+              </div>
             </li>
             <!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<span class="caret"></span></a>
@@ -109,8 +106,10 @@
             </a>
             </li> -->            
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-              <li class="support-link"><a href="/supporters/account-type">Support link</a></li>
+          <ul class="navbar-nav">
+            <li class="nav-item support-link">
+              <a class="nav-link" href="/supporters/account-type">Support link</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -508,31 +507,31 @@
             </div>
             <div class="panel-body clearfix">
             <ul class="nav nav-tabs">
-              <li class="active">
-                <a href="#">Home</a>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
               </li>
-              <li>
-                <a href="#">About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
               </li>
             </ul>
             <p></p>
             <p></p>
             <ul class="nav nav-pills">
-              <li class="active">
-                <a href="#">Home</a>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
               </li>
-              <li>
-                <a href="#">About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
               </li>
             </ul>
             <p></p>
             <p></p>
-            <ul class="nav nav-stacked nav-pills">
-              <li class="active">
-                <a href="#">Home</a>
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
               </li>
-              <li>
-                <a href="#">About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
               </li>
             </ul>
             </div>
@@ -544,178 +543,164 @@
             </div>
             <div class="panel-body">
             <p></p>
-            <div class="navbar navbar-default">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand">Standard</a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light">
+              <a href="#" class="navbar-brand">Standard</a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default MusicBrainz">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/MusicBrainz_logo_mini.svg" alt="MusicBrainz"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light MusicBrainz">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/MusicBrainz_logo_mini.svg" alt="MusicBrainz"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default MetaBrainz">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/MetaBrainz_logo_mini.svg" alt="MetaBrainz"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light MetaBrainz">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/MetaBrainz_logo_mini.svg" alt="MetaBrainz"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default CritiqueBrainz">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/CritiqueBrainz_logo_mini.svg" alt="CritiqueBrainz"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light CritiqueBrainz">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/CritiqueBrainz_logo_mini.svg" alt="CritiqueBrainz"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default AcousticBrainz">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/AcousticBrainz_logo_mini.svg" alt="AcousticBrainz"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light AcousticBrainz">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/AcousticBrainz_logo_mini.svg" alt="AcousticBrainz"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default BookBrainz">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/BookBrainz_logo_mini.svg" alt="BookBrainz"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light BookBrainz">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/BookBrainz_logo_mini.svg" alt="BookBrainz"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default Picard">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/Picard_logo_mini.svg" alt="Picard"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light Picard">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/Picard_logo_mini.svg" alt="Picard"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default CoverArtArchive">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/CoverArtArchive_logo_mini.svg" alt="CoverArtArchive"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light CoverArtArchive">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/CoverArtArchive_logo_mini.svg" alt="CoverArtArchive"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar">
+            <div class="navbar navbar-expand-lg navbar-light">
               <div class="collapse navbar-collapse">
-                <a class="btn btn-primary navbar-btn">Navbar Button</a>
-                <p class="navbar-text navbar-right">Navbar Text</p>
+                <form class="form-inline mr-auto">
+                  <button class="btn btn-primary">Navbar Button</button>
+                </form>
+                <span class="navbar-text">Navbar Text</span>
               </div>
             </div>
             
