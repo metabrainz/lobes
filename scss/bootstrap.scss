@@ -225,3 +225,58 @@ pre {
         color: $val-base-color;
     }
 }
+
+legend {
+    border-bottom: 1px solid $gray-300;
+}
+
+.card {
+    margin-bottom: 42px;
+}
+
+.form-horizontal .col-form-label {
+    text-align: right;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-check-label {
+    font-weight: unset;
+}
+
+.input-group,.input-group-sm,.input-group-lg {
+    .input-group-append {
+        .input-group-text {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+}
+
+ul.hexagonBullet li:before,
+.hexagonBullet:not(ul):before{
+  content: "\2B22";
+  margin-right: 0.5em;
+  font-size: 0.5em;
+  opacity: 0.42;
+  vertical-align: middle;
+}
+
+ul.hexagonBullet {
+  list-style: none;
+}
+
+.navbar-brand {
+    padding-top: 14px;
+}
+
+.text-muted {
+    font-weight: unset;
+}
+
+.card.bg-light {
+    background-color: $gray-200 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
