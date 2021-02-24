@@ -93,3 +93,49 @@ h2 > small {
         }
     }
 }
+
+@mixin card_style($color) {
+    color: $color;
+    border-bottom-color: rgba($color, 0.8);
+}
+
+.card {
+    background-color: inherit !important;
+    border-color: $card-border-color !important;
+}
+.card-body {
+    color: $body-color !important;
+}
+.card.card-info .card-header {
+    @include card_style($info);
+}
+.card.card-success,.card.bg-success,.card.border-success {
+    .card-header {
+        @include card_style($success);
+    }
+}
+.card.card-danger,.card.bg-danger,.card.border-danger {
+    .card-header {
+        @include card_style($danger);
+    }
+}
+.card.card-warning,.card.bg-warning,.card.border-warning {
+    .card-header {
+        @include card_style($warning);
+    }
+}
+.card.card-primary,.card.bg-primary,.card.border-primary {
+    .card-header {
+        @include card_style($primary);
+    }
+}
+.card.card-secondary,.card.bg-secondary,.card.border-secondary {
+    .card-header {
+        @include card_style($secondary);
+    }
+}
+.card.card-info,.card.bg-info,.card.border-info {
+    .card-header {
+        @include card_style($info);
+    }
+}
