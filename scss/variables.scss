@@ -169,3 +169,12 @@ $carousel-control-color: $gray-900;
 $carousel-transition-duration: 0.45s;
 
 $jumbotron-padding: 3rem;
+
+// non-bootstrap, inherited from Lobes 3
+$link-visited-color: darken($purple, 10%);
+$link-visited-hover-color: $purple;
+$list-group-link-color:          #555;
+$list-group-link-heading-color:  #333;
+$navbar-default-brand-color:               $orange;
+$navbar-inverse-brand-color:                lighten($purple,30%);
+$nav-pills-active-link-hover-color:         $white;
