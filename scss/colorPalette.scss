@@ -1,0 +1,96 @@
+@mixin hexagon-color($color) {
+  background-color: $color;
+  &:before {
+    border-bottom-color: $color;
+  }
+  &:after {
+    border-top-color: $color;
+  }
+}
+
+@mixin colour-palette($color, $darken: 15%, $lighten: $darken) {
+  @include hexagon-color($color);
+  &.dark {
+    @include hexagon-color(darken($color, $darken));
+  }
+  &.light {
+    @include hexagon-color(lighten($color, $lighten));
+  }
+}
+
+.hexagon-container {
+  margin: -2px;
+  text-align: center;
+  .hexagon {
+    display: inline-block;
+    position: relative;
+    width: 130px;
+    height: 75.06px;
+    background-color: #64c7cc;
+    margin: 37.53px 1em;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: 65px solid transparent;
+      border-right: 65px solid transparent;
+      left: 0;
+    }
+    &:before {
+      bottom: 100%;
+      border-bottom: 37.53px solid #64c7cc;
+    }
+    &:after {
+      top: 100%;
+      width: 0;
+      border-top: 37.53px solid #64c7cc;
+    }
+    &.small {
+      width: 65px;
+      height: 37.53px;
+      margin: 18.76px 0.3em;
+
+      &:nth-child(2n + 3) {
+        margin-left: 1em;
+      }
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 32.5px solid transparent;
+        border-right: 32.5px solid transparent;
+      }
+      &:before {
+        bottom: 100%;
+        border-bottom: 18.76px solid #a90000;
+      }
+      &:after {
+        top: 100%;
+        width: 0;
+        border-top: 18.76px solid #a90000;
+      }
+    }
+    &.orange {
+      @include colour-palette($orange, 15%, 17%);
+    }
+    &.purple {
+      @include colour-palette($purple, 10%);
+    }
+    &.red {
+      @include colour-palette($red, 10%, 15%);
+    }
+    &.yellow {
+      @include colour-palette($yellow, 13%, 9%);
+    }
+    &.green {
+      @include colour-palette($green, 10%);
+    }
+    &.blue {
+      @include colour-palette($blue, 15%, 12%);
+    }
+  }
+}
