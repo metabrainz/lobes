@@ -1,0 +1,87 @@
+$min-height: 350px;
+
+.metaCarousel {
+  &:not(.iHaveJavasript) {
+    .carousel-control,
+    .carousel-item:not(.active) {
+      &,
+      & * {
+        display: none;
+        height: 0;
+      }
+    }
+    .carousel-item img {
+      padding: 0;
+      padding-top: 25px;
+      margin: 0 auto;
+      transition: none;
+    }
+  }
+  .carousel {
+    perspective: 1000;
+    .carousel-item {
+      transform: none; //Override Boostrap 3.2
+      > img {
+        padding: 0;
+        padding-top: 25px;
+        margin: 0 auto;
+        transition: transform $carousel-transition-duration;
+        transform-style: preserve-3d;
+        position: relative;
+        transform-origin: 100% 75px; /* half of height */
+        backface-visibility: hidden;
+      }
+
+      .carousel-caption {
+        transition: opacity $carousel-transition-duration;
+      }
+
+      &.active,
+      &.carousel-item-next.carousel-item-left,
+      &.carousel-item-prev.carousel-item-right {
+        left: initial;
+        transform: none; //Override Boostrap 3.2
+        img {
+          transform: rotateX(0deg);
+          z-index: 2;
+        }
+        .carousel-caption {
+          opacity: 1;
+        }
+      }
+
+      &.carousel-item-next,
+      &.active.carousel-item-right {
+        left: initial;
+        transform: none; //Override Boostrap 3.2
+        img {
+          transform: rotateX(-180deg);
+        }
+        .carousel-caption {
+          opacity: 0;
+        }
+      }
+      &.carousel-item-prev,
+      &.active.carousel-item-left {
+        left: initial;
+        transform: none; //Override Boostrap 3.2
+        img {
+          transform: rotateX(180deg);
+        }
+        .carousel-caption {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .carousel-inner {
+    min-height: $min-height;
+  }
+  .carousel-item {
+    min-height: $min-height;
+    .carousel-caption {
+      margin-top: 160px;
+    }
+  }
+}
