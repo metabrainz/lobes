@@ -80,3 +80,16 @@ h2 > small {
 .list-group h1,h2,h3,h4,h5,h6 {
     color: inherit;
 }
+
+.table-hover {
+    .table-success, .table-danger, .table-warning, .table-info, .table-primary, .table-secondary {
+        @include hover() {
+            background-color: $table-hover-bg;
+
+            > td,
+            > th {
+                background-color: unset;
+            }
+        }
+    }
+}

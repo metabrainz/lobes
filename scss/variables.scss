@@ -170,6 +170,9 @@ $carousel-transition-duration: 0.45s;
 
 $jumbotron-padding: 3rem;
 
+$table-active-bg: $gray-200;
+$table-hover-bg: rgba(0, 0, 0, 0.05);
+
 // non-bootstrap, inherited from Lobes 3
 $link-visited-color: darken($purple, 10%);
 $link-visited-hover-color: $purple;
