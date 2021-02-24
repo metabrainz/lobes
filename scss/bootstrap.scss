@@ -139,3 +139,17 @@ h2 > small {
         @include card_style($info);
     }
 }
+
+.blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 5px solid $gray-400;
+}
+
+.blockquote > small {
+    display: block;
+}
+
+.blockquote > small::before {
+    content: '\2014 \00A0';
+}
