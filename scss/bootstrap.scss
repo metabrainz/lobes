@@ -13,3 +13,12 @@
 	background: url(../assets/background_tile.jpg) rgba($gray-200,60%);
 	background-blend-mode: screen;
 }
+
+.badge-gray {
+    color: $white;
+    background-color: $gray-600;
+}
+
+.badge-warning, .btn-warning, .btn-warning.disabled {
+    color: $white;
+}
