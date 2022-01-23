@@ -6,6 +6,7 @@
     "sass": "^1.49.0"
   },
   "scripts": {
+    "prepare": "sass scss/bootstrap.scss:dist/css/bootstrap.css -I ./node_modules",
     "start": "sass --watch scss/bootstrap.scss:dist/css/bootstrap.css -I ./node_modules & npx serve -p 5001"
   }
 }
