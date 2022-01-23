@@ -2,8 +2,8 @@
   "name": "lobes",
   "version": "4.0.0",
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "sass": "^1.32.5"
+    "bootstrap": "^4.6.1",
+    "sass": "^1.49.0"
   },
   "scripts": {
     "start": "sass --watch scss:dist/css -I ./ & npx serve -p 5001"
