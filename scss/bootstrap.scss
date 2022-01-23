@@ -279,3 +279,12 @@ ul.hexagonBullet {
     background-color: $gray-200 !important;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
+
+.btn-outline-primary,.btn-outline-secondary,.btn-outline-success,.btn-outline-warning,.btn-outline-danger,.btn-outline-info,.btn-outline-light,.btn-outline-dark {
+    border-width: 1px;
+
+    &:disabled {
+        color: $gray-400;
+        border-color: $gray-400;
+    }
+}
