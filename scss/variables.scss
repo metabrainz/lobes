@@ -2,17 +2,17 @@
 // Colors //
 // ------ //
 
-$white:       #FFFFFF;
-$gray-100:    #FDF9FB;
-$gray-200:    #F9F6F5;
-$gray-300:    #EAE7E5;
-$gray-400:    #D5D2CF;
-$gray-500:    #A7A49F;
-$gray-600:    #8d8d8d;
-$gray-700:    #3F3C34;
-$gray-800:    #3B3831;
-$gray-900:    #46433A;
-$black:       #000;
+$white:       #FFFFFF !default;
+$gray-100:    #FDF9FB !default;
+$gray-200:    #F9F6F5 !default;
+$gray-300:    #EAE7E5 !default;
+$gray-400:    #D5D2CF !default;
+$gray-500:    #A7A49F !default;
+$gray-600:    #8D8D8D !default;
+$gray-700:    #3F3C34 !default;
+$gray-800:    #3B3831 !default;
+$gray-900:    #46433A !default;
+$black:       #000 !default;
 
 $grays: (
   "100": $gray-100,
@@ -26,17 +26,17 @@ $grays: (
   "900": $gray-900
 );
 
-$orange:      #eb743b;
-$purple:      #ba478f;
-$green:	      #5aa854;
-$blue:	      #4e7ec2;
-$yellow:      #EA9D11;
-$red:		      #c64040;
-$cyan:        #36b5b2;
-$dark-purple: #771b85;
-$brown:       #754e37;
-$teal:        #20656c;
-$navy:        #353070;
+$orange:      #EB743B !default;
+$purple:      #BA478F !default;
+$green:       #5AA854 !default;
+$blue:        #4E7EC2 !default;
+$yellow:      #EA9D11 !default;
+$red:         #C64040 !default;
+$cyan:        #36B5B2 !default;
+$dark-purple: #771B85 !default;
+$brown:       #754E37 !default;
+$teal:        #20656C !default;
+$navy:        #353070 !default;
 
 $colors: (
   "blue":       $blue,
@@ -50,23 +50,23 @@ $colors: (
   "white":      $white,
   "gray":       $gray-600,
   "gray-dark":  $gray-800
-);
+) !default;
 
-$musicbrainz:     $purple;
-$metabrainz:      $green;
-$critiquebrainz:  $cyan;
-$acousticbrainz:  $blue;
-$picard:          $dark-purple;
-$bookbrainz:      $brown;
-$coverartarchive: $teal;
-$listenbrainz:    $navy;
+$musicbrainz:     $purple !default;
+$metabrainz:      $green !default;
+$critiquebrainz:  $cyan !default;
+$acousticbrainz:  $blue !default;
+$picard:          $dark-purple !default;
+$bookbrainz:      $brown !default;
+$coverartarchive: $teal !default;
+$listenbrainz:    $navy !default;
 
-$primary:         $orange;
-$secondary:       $gray-900;
-$success:         $green;
-$warning:         $yellow;
-$danger:          $red;
-$info:            $blue;
+$primary:         $orange !default;
+$secondary:       $gray-900 !default;
+$success:         $green !default;
+$warning:         $yellow !default;
+$danger:          $red !default;
+$info:            $blue !default;
 
 $theme-colors: (
   "primary":    $primary,
@@ -75,109 +75,109 @@ $theme-colors: (
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger
-);
+) !default;
 
 // ------------------ //
 // Bootstrap Switches //
 // ------------------ //
 
-$enable-shadows: true;
+$enable-shadows: true !default;
 
 // ----- //
 // Sizes //
 // ----- //
 
-$alert-padding-x:           1.0000rem;
-$alert-padding-y:           1.0000rem;
-$badge-border-radius:       0.2500rem;
-$border-radius-lg:          0.2500rem;
-$border-radius-sm:          0.0625rem;
-$border-radius:             0.1250rem;
-$btn-border-radius-lg:      0;
-$btn-border-radius-sm:      0;
-$btn-border-radius:         0;
-$btn-border-width:          0px;
-$card-spacer-x:             0.8750rem;
-$card-spacer-y:             1.2500rem;
-$code-font-size:            90%;
-$font-size-base:            0.8750rem; // Default is 1rem ~ 16px - change to 0.875rem to get 14px
-$input-btn-focus-width:     6px;
-$input-btn-font-size:       $font-size-base * (12 / 14);
-$input-btn-padding-x-lg:    2.0000rem;
-$input-btn-padding-x-sm:    0.8000rem;
-$input-btn-padding-x:       1.0000rem;
-$lead-font-size:            $font-size-base * 1.5;
-$list-group-item-padding-x: 0.875rem;
-$logo-height:               30px; // Unfortunately necessary for accurate logo padding
-$padding-small-horizontal:  10px;
-$padding-small-vertical:    5px;
-$progress-height:           1.2500rem;
-$small-font-size:           85%;
-$table-cell-padding-sm:     5px;
-$table-cell-padding:        8px;
-$grid-gutter-width:         42px;
-$navbar-padding-y:          0.625rem;
+$alert-padding-x:           1.0000rem !default;
+$alert-padding-y:           1.0000rem !default;
+$badge-border-radius:       0.2500rem !default;
+$border-radius-lg:          0.2500rem !default;
+$border-radius-sm:          0.0625rem !default;
+$border-radius:             0.1250rem !default;
+$btn-border-radius-lg:      0 !default;
+$btn-border-radius-sm:      0 !default;
+$btn-border-radius:         0 !default;
+$btn-border-width:          0px !default;
+$card-spacer-x:             0.8750rem !default;
+$card-spacer-y:             1.2500rem !default;
+$code-font-size:            90% !default;
+$font-size-base:            0.8750rem !default; // Default is 1rem ~ 16px - change to 0.875rem to get 14px
+$input-btn-focus-width:     6px !default;
+$input-btn-font-size:       $font-size-base * (12 / 14) !default;
+$input-btn-padding-x-lg:    2.0000rem !default;
+$input-btn-padding-x-sm:    0.8000rem !default;
+$input-btn-padding-x:       1.0000rem !default;
+$lead-font-size:            $font-size-base * 1.5 !default;
+$list-group-item-padding-x: 0.875rem !default;
+$logo-height:               30px !default; // Unfortunately necessary for accurate logo padding
+$padding-small-horizontal:  10px !default;
+$padding-small-vertical:    5px !default;
+$progress-height:           1.2500rem !default;
+$small-font-size:           85% !default;
+$table-cell-padding-sm:     5px !default;
+$table-cell-padding:        8px !default;
+$grid-gutter-width:         42px !default;
+$navbar-padding-y:          0.625rem !default;
 
 $container-max-widths: (
   sm: 540px + $grid-gutter-width,
   md: 720px + $grid-gutter-width,
   lg: 960px + $grid-gutter-width,
   xl: 1140px + $grid-gutter-width
-);
+) !default;
 
 // ----- //
 // Other //
 // ----- //
 
 
-$headings-font-weight: 300;
+$headings-font-weight: 300 !default;
 
-$headings-line-height: 1.3;
+$headings-line-height: 1.3 !default;
 
-$font-family-sans-serif: 'Sintony', sans-serif;
-$font-family-monospace:  'Monaco', 'Menlo', 'Consolas', "Courier New", monospace;
-$font-family-base:       $font-family-sans-serif;
+$font-family-sans-serif: 'Sintony', sans-serif !default;
+$font-family-monospace:  'Monaco', 'Menlo', 'Consolas', "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
 
-$headings-font-family:    'Roboto', sans-serif;
-
-
-$card-bg:                    lighten($white,6%);
+$headings-font-family:    'Roboto', sans-serif !default;
 
 
-$code-color: #c7254e;
-
-$fa-font-path:        "../webfonts";
-
-$input-btn-focus-color: $blue;
-$input-btn-focus-box-shadow: 0 0 $input-btn-focus-width $input-btn-focus-color;
-
-$input-focus-border-color: darken($blue, 10%);
-
-$light: $gray-200;
-
-$line-height-base: 1.428571429;
-
-$link-color: $blue;
-$link-hover-color:      lighten($link-color, 12%);
+$card-bg:                    lighten($white,6%) !default;
 
 
-$navbar-light-active-color: white;
+$code-color: #c7254e !default;
+
+$fa-font-path:        "../webfonts" !default;
+
+$input-btn-focus-color: $blue !default;
+$input-btn-focus-box-shadow: 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
+$input-focus-border-color: darken($blue, 10%) !default;
+
+$light: $gray-200 !default;
+
+$line-height-base: 1.428571429 !default;
+
+$link-color: $blue !default;
+$link-hover-color:      lighten($link-color, 12%) !default;
 
 
-$carousel-caption-color: $gray-900;
-$carousel-control-color: $gray-900;
-$carousel-transition-duration: 0.45s;
+$navbar-light-active-color: white !default;
 
-$jumbotron-padding: 3rem;
 
-$table-active-bg: $gray-200;
-$table-hover-bg: rgba(0, 0, 0, 0.05);
+$carousel-caption-color: $gray-900 !default;
+$carousel-control-color: $gray-900 !default;
+$carousel-transition-duration: 0.45s !default;
+
+$jumbotron-padding: 3rem !default;
+
+$table-active-bg: $gray-200 !default;
+$table-hover-bg: rgba(0, 0, 0, 0.05) !default;
 
 // non-bootstrap, inherited from Lobes 3
-$link-visited-color: darken($purple, 10%);
-$link-visited-hover-color: $purple;
-$list-group-link-color:          #555;
-$list-group-link-heading-color:  #333;
-$navbar-default-brand-color:               $orange;
-$navbar-inverse-brand-color:                lighten($purple,30%);
-$nav-pills-active-link-hover-color:         $white;
+$link-visited-color: darken($purple, 10%) !default;
+$link-visited-hover-color: $purple !default;
+$list-group-link-color:          #555 !default;
+$list-group-link-heading-color:  #333 !default;
+$navbar-default-brand-color:               $orange !default;
+$navbar-inverse-brand-color:                lighten($purple,30%) !default;
+$nav-pills-active-link-hover-color:         $white !default;
