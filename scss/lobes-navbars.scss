@@ -8,7 +8,7 @@
   border: none;
 
   .navbar-nav {
-    > li > a {
+    > .nav-item > .nav-link {
       color: $link-color;
       font-size: 1.1em;
       font-family: $headings-font-family;
@@ -27,7 +27,7 @@
       }
     }
 
-    > .active > a {
+    > .active > .nav-link {
       &,
       &:hover,
       &:focus {
@@ -36,7 +36,7 @@
       }
     }
 
-    > .disabled > a {
+    > .disabled > .nav-link {
       &,
       &:hover,
       &:focus {
@@ -46,7 +46,7 @@
     }
 
     // Dropdowns
-    > .open > a {
+    > .open > .nav-link {
       &,
       &:hover,
       &:focus {
@@ -55,17 +55,17 @@
       }
     }
 
-    > .dropdown > a:hover .caret {
+    > .dropdown > .nav-link:hover .caret {
       border-top-color: $active-color;
       border-bottom-color: $active-color;
     }
 
-    > .dropdown > a .caret {
+    > .dropdown > .nav-link .caret {
       border-top-color: $link-color;
       border-bottom-color: $link-color;
     }
 
-    > .open > a {
+    > .open > .nav-link {
       &,
       &:hover,
       &:focus {
@@ -83,7 +83,7 @@
           border-color: $color;
         }
 
-        > li > a {
+        > .nav-item > .nav-link {
           color: $color;
           &:hover,
           &:focus {
@@ -92,7 +92,7 @@
           }
         }
 
-        > .active > a {
+        > .active > .nav-link {
           &,
           &:hover,
           &:focus {
@@ -101,7 +101,7 @@
           }
         }
 
-        > .disabled > a {
+        > .disabled > .nav-link {
           &,
           &:hover,
           &:focus {
@@ -164,7 +164,7 @@
 
   // Links in navbars
   // Add a class to ensure links outside the navbar nav are colored correctly.
-  .navbar-link {
+  .nav-link {
     color: $link-color;
     &:hover {
       color: $active-color;
@@ -200,7 +200,7 @@ body.MetaBrainz .navbar,
     .navbar-collapse {
       width: #{"calc(100% - ${logo-width} - ${padding-small-horizontal})"};
     }
-    .navbar-nav > li > a {
+    .navbar-nav > .nav-item > .nav-link {
       padding-right: $padding-small-horizontal;
       padding-left: $padding-small-horizontal;
     }
