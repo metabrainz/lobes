@@ -1,5 +1,7 @@
 {
-  "name": "lobes",
+  "author": "Ben Ockmore",
+  "name": "lobes4",
+  "description": "Lobes 4 is a Bootstrap 4 theme developed by Monkey.Do and Ben Ockmore for MetaBrainz",
   "version": "4.0.0",
   "dependencies": {
     "bootstrap": "^4.6.1",
@@ -8,5 +10,11 @@
   "scripts": {
     "prepare": "sass scss/bootstrap.scss:dist/css/bootstrap.css -I ./node_modules",
     "start": "sass --watch scss/bootstrap.scss:dist/css/bootstrap.css -I ./node_modules & npx serve -p 5001"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LordSputnik/lobes.git"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://lordsputnik.github.io/lobes"
 }
