@@ -120,7 +120,7 @@
     @media (min-width: map-get($grid-breakpoints, "lg")) {
       padding: 4px 0 0;
       width: 75%; //Fallback overriden by magic just below:
-      width: #{"calc(100% - ${logo-width} - ${navbar-padding-horizontal})"};
+      width: calc(100% - $logo-width - $navbar-padding-horizontal);
       float: right;
 
       // Resets first and last children spacing
@@ -193,7 +193,7 @@ body.MetaBrainz .navbar,
   // The other option is to change the breakpoints in the variables.less and recompile, but -> meh.
   @media (min-width: map-get($grid-breakpoints, "md")) and (max-width: map-get($grid-breakpoints, "lg")) {
     .navbar-collapse {
-      width: #{"calc(100% - ${logo-width} - ${padding-small-horizontal})"};
+      width: calc(100% - $logo-width - $padding-small-horizontal);
     }
     .navbar-nav > .nav-item > .nav-link {
       padding-right: $padding-small-horizontal;
