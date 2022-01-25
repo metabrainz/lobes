@@ -4,7 +4,7 @@ a {
   &:focus {
     text-decoration: none;
   }
-  &:visited:not(.btn) {
+  &:visited:not(.btn):not(.nav-link) {
     color: $link-visited-color;
     &:hover {
       color: $link-visited-hover-color;
@@ -18,7 +18,7 @@ a {
   &:hover > .panel {
     color: $link-hover-color;
   }
-  &:visited:not(.btn) > .panel {
+  &:visited:not(.btn):not(.nav-link) > .panel {
     color: $link-visited-color;
     &:hover > .panel {
       color: $link-visited-hover-color;
