@@ -10211,10 +10211,10 @@ a {
 a:hover, a:focus {
   text-decoration: none;
 }
-a:visited:not(.btn):not(.nav-link) {
+a:visited:not(.btn):not(.nav-link):not(.dropdown-item) {
   color: #963873;
 }
-a:visited:not(.btn):not(.nav-link):hover {
+a:visited:not(.btn):not(.nav-link):not(.dropdown-item):hover {
   color: #BA478F;
 }
 a > .panel {
@@ -10223,10 +10223,10 @@ a > .panel {
 a:hover > .panel {
   color: #7c9fd2;
 }
-a:visited:not(.btn):not(.nav-link) > .panel {
+a:visited:not(.btn):not(.nav-link):not(.dropdown-item) > .panel {
   color: #963873;
 }
-a:visited:not(.btn):not(.nav-link) > .panel:hover > .panel {
+a:visited:not(.btn):not(.nav-link):not(.dropdown-item) > .panel:hover > .panel {
   color: #BA478F;
 }
 a.list-group-item:visited {
