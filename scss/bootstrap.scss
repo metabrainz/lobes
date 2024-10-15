@@ -19,12 +19,8 @@
     background-color: $gray-600;
 }
 
-.badge-warning, .btn-warning, .btn-warning.disabled {
-    color: $white;
-}
-
-.progress {
-    margin-bottom: 20px;
+.progress + .progress {
+    margin-top: 20px;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
@@ -33,23 +29,15 @@ h1, .h1, h2, .h2, h3, .h3 {
 
 	small, .small {
 		font-size: 65%;
+        color: $secondary;
+        font-weight: $headings-font-weight;
 	}
 
     &.card-header {
         margin-top: 0;
     }
+
 }
-
-h1 > small {
-    color: $secondary;
-    font-weight: $headings-font-weight;
-    font-size: 0.65em;
-};
-
-h2 > small {
-    color: $secondary;
-    font-weight: $headings-font-weight;
-};
 
 .card-header {
     border-color: rgba($primary, 80%) $card-border-color;
@@ -61,10 +49,6 @@ h2 > small {
     margin: 40px 0 20px;
     padding-bottom: 9px;
     border-bottom: 1px solid $gray-400;
-}
-
-.list-group h1,h2,h3,h4,h5,h6 {
-    color: inherit;
 }
 
 @mixin card_style($color) {
