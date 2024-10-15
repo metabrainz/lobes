@@ -6,7 +6,6 @@
 @import "./colorPalette.scss";
 @import "./links.scss";
 @import "./lobes-navbars.scss";
-@import "./lobes-buttons.scss";
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,400,300,700|Sintony:200,400,700&subset=latin,latin-ext,cyrillic,cyrillic-ext);
 
@@ -275,3 +274,7 @@ ul.hexagonBullet {
 a:visited.dropdown-item {
 	color: $gray-800 !important;
 }
+
+// .btn-primary {
+//   --bs-btn-color: $colors.white;
+// }
