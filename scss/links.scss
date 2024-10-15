@@ -4,11 +4,12 @@ a {
   &:focus {
     text-decoration: none;
   }
-  &:visited:not(.btn):not(.nav-link):not(.dropdown-item) {
+  &:visited:not(.btn):not(.nav-link):not(.page-link):not(.dropdown-item) {
+    &, & > .panel{
     color: $link-visited-color;
     &:hover {
       color: $link-visited-hover-color;
-    }
+    }}
   }
 
   // Override Lobes panel text styling when inside a link
@@ -17,12 +18,6 @@ a {
   }
   &:hover > .panel {
     color: $link-hover-color;
-  }
-  &:visited:not(.btn):not(.nav-link):not(.dropdown-item) > .panel {
-    color: $link-visited-color;
-    &:hover > .panel {
-      color: $link-visited-hover-color;
-    }
   }
 
   // Exceptions to :visited state
