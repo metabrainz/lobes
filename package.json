@@ -4,11 +4,11 @@
   "description": "Lobes 4 is a Bootstrap 4 theme developed by Monkey.Do and Ben Ockmore for MetaBrainz",
   "version": "4.0.1",
   "devDependencies": {
-    "bootstrap": "^4.6.1",
+    "bootstrap": "^5.3.3",
     "sass": "^1.49.0"
   },
   "peerDependencies": {
-    "bootstrap": "^4.0.0"
+    "bootstrap": "^5.3.3"
   },
   "scripts": {
     "prepare": "sass scss/bootstrap.scss:dist/css/bootstrap.css -I ./node_modules",
