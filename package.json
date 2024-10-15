@@ -16,8 +16,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LordSputnik/lobes.git"
+    "url": "https://github.com/metabrainz/lobes.git"
   },
   "license": "Apache-2.0",
-  "homepage": "https://lordsputnik.github.io/lobes"
+  "homepage": "https://metabrainz.github.io/lobes"
 }
