@@ -39,10 +39,6 @@ h1, .h1, h2, .h2, h3, .h3 {
     }
 }
 
-.jumbotron > h1 {
-    line-height: 1;
-    font-size: $h1-font-size * 1.75;
-}
 h1 > small {
     color: $secondary;
     font-weight: $headings-font-weight;
@@ -53,15 +49,6 @@ h2 > small {
     color: $secondary;
     font-weight: $headings-font-weight;
 };
-
-.jumbotron  {
-    font-size: $font-size-base * 1.5;
-    font-weight: 200;
-}
-
-.jumbotron > p {
-    line-height: 1.4;
-}
 
 .card-header {
     border-color: rgba($primary, 80%) $card-border-color;
