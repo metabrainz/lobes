@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // ------ //
 // Colors //
 // ------ //
@@ -153,7 +155,7 @@ $font-family-base:       $font-family-sans-serif !default;
 $headings-font-family:    'Roboto', sans-serif !default;
 
 
-$card-bg:                    lighten($white,6%) !default;
+$card-bg:                    color.adjust($white,$lightness: 6%, $space: hsl) !default;
 
 
 $code-color: #c7254e !default;
@@ -164,12 +166,12 @@ $input-btn-focus-width: 0;
 $input-btn-focus-color: $blue !default;
 $input-btn-focus-box-shadow: 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
-$input-focus-border-color: darken($blue, 10%) !default;
+$input-focus-border-color: color.adjust($blue, $lightness: -10%, $space: hsl) !default;
 
 $light: $gray-200 !default;
 
 $link-color: $blue !default;
-$link-hover-color:      lighten($link-color, 12%) !default;
+$link-hover-color:      color.adjust($link-color, $lightness: 12%, $space: hsl) !default;
 
 
 $navbar-light-active-color: white !default;
@@ -178,12 +180,12 @@ $table-active-bg: $gray-200 !default;
 $table-hover-bg: rgba(0, 0, 0, 0.05) !default;
 
 // non-bootstrap, inherited from Lobes 3
-$link-visited-color: darken($purple, 10%) !default;
+$link-visited-color: color.adjust($purple, $lightness: -10%, $space: hsl) !default;
 $link-visited-hover-color: $purple !default;
 $list-group-link-color:          #555 !default;
 $list-group-link-heading-color:  #333 !default;
 $navbar-default-brand-color:               $orange !default;
-$navbar-inverse-brand-color:                lighten($purple,30%) !default;
+$navbar-inverse-brand-color:                color.adjust($purple,$lightness: 30%, $space: hsl) !default;
 $nav-pills-active-link-hover-color:         $white !default;
 
 $navbar-nav-link-padding-x: 1rem !default;

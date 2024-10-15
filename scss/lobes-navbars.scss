@@ -1,7 +1,9 @@
+@use "sass:color";
+
 @mixin navbar-variant($color, $logo-width: 200px, $active-color: $white) {
   $active-bg: $color;
-  $disabled-bg: lighten(desaturate($color, 10%), 42%);
-  $disabled-color: lighten($disabled-bg, 15%);
+  $disabled-bg: color.adjust(color.adjust($color, $saturation: -10%), $lightness: 42%, $space: hsl);
+  $disabled-color: color.adjust($disabled-bg, $lightness: 15%, $space: hsl);
   $link-color: $color;
 
   background: none;

@@ -1,5 +1,7 @@
+@use "sass:color";
+
 @import "./variables.scss";
-@import "bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 @import "./colorPalette.scss";
 @import "./links.scss";
@@ -152,14 +154,14 @@ pre {
 }
 
 .has-warning {
-    $val-base-color: darken($warning, 10%);
+    $val-base-color: color.adjust($warning, $lightness: -10%, $space: hsl);
 
     .form-control {
         border-color: $val-base-color;
 
         $val-box-shadow: 0 0 6px $val-base-color;
         &:focus {
-            border-color: darken($val-base-color, 25%);
+            border-color: color.adjust($val-base-color, $lightness: -25%, $space: hsl);
             outline: 0;
 
             @include box-shadow($input-box-shadow, $val-box-shadow);
@@ -179,7 +181,7 @@ pre {
 
         $val-box-shadow: 0 0 6px $val-base-color;
         &:focus {
-            border-color: darken($val-base-color, 25%);
+            border-color: color.adjust($val-base-color, $lightness: -25%, $space: hsl);
             outline: 0;
 
             @include box-shadow($input-box-shadow, $val-box-shadow);
@@ -199,7 +201,7 @@ pre {
 
         $val-box-shadow: 0 0 6px $val-base-color;
         &:focus {
-            border-color: darken($val-base-color, 25%);
+            border-color: color.adjust($val-base-color, $lightness: -25%, $space: hsl);
             outline: 0;
 
             @include box-shadow($input-box-shadow, $val-box-shadow);
