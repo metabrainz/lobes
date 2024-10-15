@@ -1,0 +1,259 @@
+@mixin navbar-variant($color, $logo-width: 200px, $active-color: $white) {
+  $active-bg: $color;
+  $disabled-bg: lighten(desaturate($color, 10%), 42%);
+  $disabled-color: lighten($disabled-bg, 15%);
+  $link-color: $color;
+
+  background: none;
+  border: none;
+
+  .navbar-nav {
+    > .nav-item > .nav-link {
+      color: $link-color;
+      font-size: 1.1em;
+      font-family: $headings-font-family;
+      font-weight: 700;
+      line-height: 1.25rem;
+      // font-weight: $headings-font-weight;
+      @media (min-width: map-get($grid-breakpoints, "lg")) {
+        // margin: $padding-large-vertical 0;
+        padding-top: $navbar-padding-y;
+        padding-bottom: $navbar-padding-y;
+      }
+      &:hover,
+      &:focus {
+        color: $active-color;
+        background-color: $active-bg;
+      }
+    }
+
+    > .active > .nav-link {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-light-active-color;
+        background-color: $active-bg;
+      }
+    }
+
+    > .disabled > .nav-link {
+      &,
+      &:hover,
+      &:focus {
+        color: $disabled-color;
+        background-color: $disabled-bg;
+      }
+    }
+
+    // Dropdowns
+    > .open > .nav-link {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $active-bg;
+        color: $active-color;
+      }
+    }
+
+    > .dropdown > .nav-link:hover .caret {
+      border-top-color: $active-color;
+      border-bottom-color: $active-color;
+    }
+
+    > .dropdown > .nav-link .caret {
+      border-top-color: $link-color;
+      border-bottom-color: $link-color;
+    }
+
+    > .open > .nav-link {
+      &,
+      &:hover,
+      &:focus {
+        .caret {
+          border-top-color: $active-color;
+          border-bottom-color: $active-color;
+        }
+      }
+    }
+
+    @media (max-width: map-get($grid-breakpoints, "sm")) {
+      // Dropdowns get custom display
+      .open .dropdown-menu {
+        > .dropdown-header {
+          border-color: $color;
+        }
+
+        > .nav-item > .nav-link {
+          color: $color;
+          &:hover,
+          &:focus {
+            color: $active-color;
+            background-color: $active-bg;
+          }
+        }
+
+        > .active > .nav-link {
+          &,
+          &:hover,
+          &:focus {
+            color: $active-color;
+            background-color: $active-bg;
+          }
+        }
+
+        > .disabled > .nav-link {
+          &,
+          &:hover,
+          &:focus {
+            color: $disabled-color;
+            background-color: $disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-collapse {
+    border-color: $color;
+    border-bottom: 2px solid $color;
+
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+      padding: 4px 0 0;
+      width: 75%; //Fallback overriden by magic just below:
+      width: calc(100% - $logo-width - $navbar-padding-horizontal);
+      float: right;
+
+      // Resets first and last children spacing
+      .navbar-nav.navbar-left:first-child {
+        margin-left: 0;
+      }
+
+      .navbar-nav.navbar-right:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .navbar-brand {
+    color: $color;
+
+    &.logo {
+      padding-top: $navbar-brand-padding-y;
+      padding-bottom: $navbar-brand-padding-y;
+    }
+
+    &:hover,
+    &:focus {
+      color: $active-color;
+      // background-color: $active-bg;
+    }
+
+    &:visited {
+      color: $color;
+    }
+  }
+
+  .navbar-text {
+    color: $color;
+  }
+
+  // Links in navbars
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+  .nav-link {
+    color: $link-color;
+    &:hover {
+      color: $active-color;
+    }
+  }
+
+  .navbar-form {
+    margin: 0;
+  }
+
+  .support-link > a {
+    color: $active-color !important;
+    background-color: $color;
+    font-weight: bold !important;
+  }
+}
+
+// Apply navbar variants
+// ----------------------------------------------
+
+.navbar-light {
+  @include navbar-variant($orange);
+}
+
+body.MetaBrainz .navbar,
+.navbar.MetaBrainz {
+  $logo-width: 191px;
+  @include navbar-variant($metabrainz, $logo-width);
+
+  // Custom size adjustments as MeB has lots of navbar items
+  // The other option is to change the breakpoints in the variables.less and recompile, but -> meh.
+  @media (min-width: map-get($grid-breakpoints, "md")) and (max-width: map-get($grid-breakpoints, "lg")) {
+    .navbar-collapse {
+      width: calc(100% - $logo-width - $padding-small-horizontal);
+    }
+    .navbar-nav > .nav-item > .nav-link {
+      padding-right: $padding-small-horizontal;
+      padding-left: $padding-small-horizontal;
+    }
+    .navbar-brand {
+      padding-right: $padding-small-horizontal;
+      padding-left: $padding-small-horizontal;
+    }
+    > .container {
+      max-width: map-get($grid-breakpoints, "lg");
+    }
+  }
+}
+
+body.MusicBrainz .navbar,
+.navbar.MusicBrainz {
+  $logo-width: 191px;
+  @include navbar-variant($musicbrainz, $logo-width);
+}
+
+body.Picard .navbar,
+.navbar.Picard {
+  $logo-width: 115px;
+  @include navbar-variant($picard, $logo-width);
+}
+
+body.CritiqueBrainz .navbar,
+.navbar.CritiqueBrainz {
+  $logo-width: 215px;
+  @include navbar-variant($critiquebrainz, $logo-width);
+}
+
+body.AcousticBrainz .navbar,
+.navbar.AcousticBrainz {
+  $logo-width: 230px;
+  @include navbar-variant($acousticbrainz, $logo-width);
+}
+
+body.BookBrainz .navbar,
+.navbar.BookBrainz {
+  $logo-width: 180px;
+  @include navbar-variant($bookbrainz, $logo-width);
+}
+
+body.CoverArtArchive .navbar,
+.navbar.CoverArtArchive {
+  $logo-width: 245px;
+  @include navbar-variant($coverartarchive, $logo-width);
+}
+
+body.ListenBrainz .navbar,
+.navbar.ListenBrainz {
+  $logo-width: 245px;
+  @include navbar-variant($listenbrainz, $logo-width);
+}
+
+// Extra padding on navbar-brand to match original Lobes
+.navbar-brand {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  height: 44px;
+}

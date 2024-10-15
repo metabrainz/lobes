@@ -1,0 +1,302 @@
+@import "./variables.scss";
+@import "bootstrap/scss/bootstrap";
+
+@import "./colorPalette.scss";
+@import "./links.scss";
+@import "./lobes-navbars.scss";
+@import "./lobes-buttons.scss";
+@import "./lobes-carousel.scss";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,400,300,700|Sintony:200,400,700&subset=latin,latin-ext,cyrillic,cyrillic-ext);
+
+.corporate-background{
+	background: url(../assets/background_tile.jpg) rgba($gray-200,60%);
+	background-blend-mode: screen;
+}
+
+.badge-gray {
+    color: $white;
+    background-color: $gray-600;
+}
+
+.badge-warning, .btn-warning, .btn-warning.disabled {
+    color: $white;
+}
+
+.progress {
+    margin-bottom: 20px;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+	small, .small {
+		font-size: 65%;
+	}
+
+    &.card-header {
+        margin-top: 0;
+    }
+}
+
+.jumbotron > h1 {
+    line-height: 1;
+    font-size: $h1-font-size * 1.75;
+}
+h1 > small {
+    color: $secondary;
+    font-weight: $headings-font-weight;
+    font-size: 0.65em;
+};
+
+h2 > small {
+    color: $secondary;
+    font-weight: $headings-font-weight;
+};
+
+.jumbotron  {
+    font-size: $font-size-base * 1.5;
+    font-weight: 200;
+}
+
+.jumbotron > p {
+    line-height: 1.4;
+}
+
+.card-header {
+    border-color: rgba($primary, 80%) $card-border-color;
+    border-bottom-width: 0.125rem;
+    line-height: 1.3;
+}
+
+.page-header {
+    margin: 40px 0 20px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid $gray-400;
+}
+
+.list-group h1,h2,h3,h4,h5,h6 {
+    color: inherit;
+}
+
+.table-hover {
+    .table-success, .table-danger, .table-warning, .table-info, .table-primary, .table-secondary {
+        @include hover() {
+            background-color: $table-hover-bg;
+
+            > td,
+            > th {
+                background-color: unset;
+            }
+        }
+    }
+}
+
+@mixin card_style($color) {
+    color: $color;
+    border-bottom-color: rgba($color, 0.8);
+}
+
+.card {
+    background-color: inherit !important;
+    border-color: $card-border-color !important;
+}
+.card-body {
+    color: $body-color !important;
+}
+.card.card-info .card-header {
+    @include card_style($info);
+}
+.card.card-success,.card.bg-success,.card.border-success {
+    .card-header {
+        @include card_style($success);
+    }
+}
+.card.card-danger,.card.bg-danger,.card.border-danger {
+    .card-header {
+        @include card_style($danger);
+    }
+}
+.card.card-warning,.card.bg-warning,.card.border-warning {
+    .card-header {
+        @include card_style($warning);
+    }
+}
+.card.card-primary,.card.bg-primary,.card.border-primary {
+    .card-header {
+        @include card_style($primary);
+    }
+}
+.card.card-secondary,.card.bg-secondary,.card.border-secondary {
+    .card-header {
+        @include card_style($secondary);
+    }
+}
+.card.card-info,.card.bg-info,.card.border-info {
+    .card-header {
+        @include card_style($info);
+    }
+}
+
+.blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 5px solid $gray-400;
+}
+
+.blockquote > small {
+    display: block;
+}
+
+.blockquote > small::before {
+    content: '\2014 \00A0';
+}
+
+pre {
+    display: block;
+    background-color: $gray-200;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: visible;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid $gray-400;
+}
+
+.has-warning {
+    $val-base-color: darken($warning, 10%);
+
+    .form-control {
+        border-color: $val-base-color;
+
+        $val-box-shadow: 0 0 6px $val-base-color;
+        &:focus {
+            border-color: darken($val-base-color, 25%);
+            outline: 0;
+
+            @include box-shadow($input-box-shadow, $val-box-shadow);
+        }
+    }
+
+    label {
+        color: $val-base-color;
+    }
+}
+
+.has-error {
+    $val-base-color: $danger;
+
+    .form-control {
+        border-color: $val-base-color;
+
+        $val-box-shadow: 0 0 6px $val-base-color;
+        &:focus {
+            border-color: darken($val-base-color, 25%);
+            outline: 0;
+
+            @include box-shadow($input-box-shadow, $val-box-shadow);
+        }
+    }
+
+    label {
+        color: $val-base-color;
+    }
+}
+
+.has-success {
+    $val-base-color: $success;
+
+    .form-control {
+        border-color: $val-base-color;
+
+        $val-box-shadow: 0 0 6px $val-base-color;
+        &:focus {
+            border-color: darken($val-base-color, 25%);
+            outline: 0;
+
+            @include box-shadow($input-box-shadow, $val-box-shadow);
+        }
+    }
+
+    label {
+        color: $val-base-color;
+    }
+}
+
+legend {
+    border-bottom: 1px solid $gray-300;
+}
+
+.card {
+    margin-bottom: 42px;
+}
+
+.form-horizontal .col-form-label {
+    text-align: right;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-check-label {
+    font-weight: unset;
+}
+
+.input-group,.input-group-sm,.input-group-lg {
+    .input-group-append {
+        .input-group-text {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+}
+
+ul.hexagonBullet li:before,
+.hexagonBullet:not(ul):before{
+  content: "\2B22";
+  margin-right: 0.5em;
+  font-size: 0.5em;
+  opacity: 0.42;
+  vertical-align: middle;
+}
+
+ul.hexagonBullet {
+  list-style: none;
+}
+
+.navbar-brand {
+    padding-top: 14px;
+}
+
+.text-muted {
+    font-weight: unset;
+}
+
+.card.bg-light {
+    background-color: $gray-200 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.btn-outline-primary,.btn-outline-secondary,.btn-outline-success,.btn-outline-warning,.btn-outline-danger,.btn-outline-info,.btn-outline-light,.btn-outline-dark {
+    border-width: 1px;
+
+    &:disabled {
+        color: $gray-400;
+        border-color: $gray-400;
+    }
+}
+
+.table-responsive {
+	margin-bottom: 15px;
+}
+
+.list-group {
+    margin-bottom: 20px;
+}
+
+a:visited.dropdown-item {
+	color: $gray-800 !important;
+}

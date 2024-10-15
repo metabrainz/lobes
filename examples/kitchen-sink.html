@@ -3,11 +3,13 @@
 <html>
   
   <head>
-    <title>Lobes - for MusicBrainz - A Bootstrap 3 Theme</title>
+    <title>Lobes - for MusicBrainz - A Bootstrap 4 Theme</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../dist/css/bootstrap.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css" integrity="sha512-shT5e46zNSD6lt4dlJHb+7LoUko9QZXTGlmWWx0qjI9UhQrElRb+Q5DM7SVte9G9ZNmovz2qIaV7IWv0xQkBkw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js" integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg==" crossorigin="anonymous"></script>
     <style>
       body {
         padding-bottom: 60px;
@@ -16,62 +18,59 @@
   </head>
   
   <body>
-    <div class="navbar navbar-default navbar-static-top MetaBrainz">
+    <div class="navbar navbar-expand-lg navbar-light navbar-static-top MetaBrainz">
       <div class="container">
-        
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".header-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand logo" href="#">
-             <img src="../dist/assets/MetaBrainz_logo_mini.svg" alt=" Lobes - for MusicBrainz"></img>
-             </a>
-        </div>
-        
+        <a class="navbar-brand logo" href="#">
+            <img src="../dist/assets/MetaBrainz_logo_mini.svg" alt=" Lobes - for MusicBrainz"></img>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".header-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
         <div class="collapse navbar-collapse header-collapse">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#colors">Colors</a></li>
-                <li><a href="#headings">Headings</a></li>
-                <li><a href="#content-formatting">Content</a></li>
-                <li><a href="#tables">Tables</a></li>
-                <li><a href="#forms">Forms</a></li>
-                <li><a href="#images">Images</a></li>
-              </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">CSS <span class="caret"></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#colors">Colors</a>
+                <a class="dropdown-item" href="#headings">Headings</a>
+                <a class="dropdown-item" href="#content-formatting">Content</a>
+                <a class="dropdown-item" href="#tables">Tables</a>
+                <a class="dropdown-item" href="#forms">Forms</a>
+                <a class="dropdown-item" href="#images">Images</a>
+              </div>
             </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#dropdowns">Dropdowns</a></li>
-                <li><a href="#input-groups">Input Groups</a></li>
-                <li><a href="#navs">Navs</a></li>
-                <li><a href="#navbar">Navbar</a></li>
-                <li><a href="#pagination">Pagination</a></li>
-                <li><a href="#alerts">Alerts</a></li>
-                <li><a href="#labels">Labels</a></li>
-                <li><a href="#progress">Progress</a></li>
-                <li><a href="#media-object">Media Object</a></li>
-                <li><a href="#list-groups">List Groups</a></li>
-                <li><a href="#panels">Panels</a></li>
-                <li><a href="#wells">Wells</a></li>
-              </ul>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Components <span class="caret"></span></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#dropdowns">Dropdowns</a>
+                <a class="dropdown-item" href="#input-groups">Input Groups</a>
+                <a class="dropdown-item" href="#navs">Navs</a>
+                <a class="dropdown-item" href="#navbar">Navbar</a>
+                <a class="dropdown-item" href="#pagination">Pagination</a>
+                <a class="dropdown-item" href="#alerts">Alerts</a>
+                <a class="dropdown-item" href="#labels">Labels</a>
+                <a class="dropdown-item" href="#progress">Progress</a>
+                <a class="dropdown-item" href="#media-object">Media Object</a>
+                <a class="dropdown-item" href="#list-groups">List Groups</a>
+                <a class="dropdown-item" href="#panels">Panels</a>
+                <a class="dropdown-item" href="#wells">Wells</a>
+              </div>
             </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Source <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-header">CSS Files</li>
-                <li><a href="../dist/css/bootstrap.css">bootstrap.css</a></li>
-                <li><a href="../dist/css/bootstrap.min.css">bootstrap.min.css</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">LESS Files</li>
-                <li><a href="../less/variables.less">variables.less</a></li>
-                <li><a href="../less/theme.less">theme.less</a></li>
-              </ul>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Source <span class="caret"></span></a>
+              <div class="dropdown-menu">
+                <h6 class="dropdown-header">CSS Files</h6>
+                <a class="dropdown-item" href="../dist/css/bootstrap.css">bootstrap.css</a>
+                <a class="dropdown-item" href="../dist/css/bootstrap.min.css">bootstrap.min.css</a>
+                <div class="dropdown-divider"></div>
+                <h6 class="dropdown-header">LESS Files</h6>
+                <a class="dropdown-item" href="../less/variables.less">variables.less</a>
+                <a class="dropdown-item" href="../less/theme.less">theme.less</a>
+              </div>
             </li>
             <!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<span class="caret"></span></a>
@@ -107,8 +106,10 @@
             </a>
             </li> -->            
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-              <li class="support-link"><a href="/supporters/account-type">Support link</a></li>
+          <ul class="navbar-nav">
+            <li class="nav-item support-link">
+              <a class="nav-link" href="/supporters/account-type">Support link</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -122,11 +123,11 @@
         <p>A quick preview of everything Bootstrap has to offer.</p>
         <p><a class="btn btn-primary btn-lg" href="#">Learn more &raquo;</a></p>
       </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="panel panel-default" id="colors">
-            <div class="panel-heading">Primary Colors</div>
-            <div class="panel-body corporate-background">
+      <div class="row mb-4">
+        <div class="col-xl-4">
+          <div class="card" id="colors">
+            <h4 class="card-header">Primary Colors</h4>
+            <div class="card-body corporate-background">
               <div class="hexagon-container">
                 <div class="orange hexagon"></div>
                 <div class="purple hexagon"></div>
@@ -140,10 +141,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-8">
-          <div class="panel panel-default" id="colors2">
-            <div class="panel-heading">Secondary Colors</div>
-            <div class="panel-body corporate-background">
+        <div class="col-xl-8">
+          <div class="card" id="colors2">
+            <h4 class="card-header">Secondary Colors</h4>
+            <div class="card-body corporate-background">
               <div class="hexagon-container">
                 <div class="blue hexagon"></div>
                 <div class="green hexagon"></div>
@@ -164,11 +165,11 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="panel panel-default" id="headings">
-            <div class="panel-heading">Headings</div>
-            <div class="panel-body">
+      <div class="row mb-4">
+        <div class="col-xl-6">
+          <div class="card" id="headings">
+            <h4 class="card-header">Headings</h4>
+            <div class="card-body">
             <h1 class="page-header">Header font: Roboto Regular</br><small>Subtitle Roboto Light</small></h1>
             <h1>This is an h1 heading</h1>
             <h2>This is an h2 heading</h2>
@@ -179,10 +180,10 @@
             <h6>CУЯILLIC FФИT SЦPPФЯT TЗST</h6>
             </div>
           </div>
-          <div class="panel panel-default" id="tables">
-            <div class="panel-heading">Tables
-            </div>
-            <div class="panel-body">
+          <div class="card" id="tables">
+            <h4 class="card-header">Tables
+            </h4>
+            <div class="card-body">
             <table class="table table-hover">
               <thead>
                 <tr>
@@ -202,22 +203,22 @@
                   <td>Lucille</td>
                   <td>Do you like them?</td>
                 </tr>
-                <tr class="success">
+                <tr class="table-success">
                   <td>3</td>
                   <td>Success</td>
                   <td></td>
                 </tr>
-                <tr class="danger">
+                <tr class="table-danger">
                   <td>4</td>
                   <td>Danger</td>
                   <td></td>
                 </tr>
-                <tr class="warning">
+                <tr class="table-warning">
                   <td>5</td>
                   <td>Warning</td>
                   <td></td>
                 </tr>
-                <tr class="active">
+                <tr class="table-active">
                   <td>6</td>
                   <td>Active</td>
                   <td></td>
@@ -248,14 +249,13 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="panel panel-default" id="content-formatting">
-            <div class="panel-heading">Content Formatting
-            </div>
-            <div class="panel-body">
+        <div class="col-xl-6">
+          <div class="card" id="content-formatting">
+            <h4 class="card-header">Content Formatting</h4>
+            <div class="card-body">
             <p class="lead">Text font: Sintony</p>
             <p>This is an <b>ordinary paragraph</b> that is <i>long enough</i> to wrap to <u>multiple lines</u> so that you can see how the line spacing looks.</p>
-            <p class="lead pull-right" style="font-size: 5em;text-align: right;line-height:1em;  margin: 20px;">Fruno</br>bigax</p>
+            <p class="lead float-right" style="font-size: 5em;text-align: right;line-height:1em;  margin: 20px;">Fruno</br>bigax</p>
             <p class="text-muted">Muted color paragraph.</p>
             <p class="text-warning">Warning color paragraph.</p>
             <p class="text-danger">Danger color paragraph.</p>
@@ -266,11 +266,11 @@
             <hr>
             <address>                <strong>Twitter, Inc.</strong><br>                795 Folsom Ave, Suite 600<br>                San Francisco, CA 94107<br>                <abbr title="Phone">P:</abbr> (123) 456-7890              </address><address class="col-6">                <strong>Full Name</strong><br>                <a href="mailto:#">first.last@example.com</a>              </address>
             <hr>
-            <blockquote>Here's what a blockquote looks like in Bootstrap. <small>Use <code>small</code> to identify the source.</small>
+            <blockquote class="blockquote">Here's what a blockquote looks like in Bootstrap. <small>Use <code>small</code> to identify the source.</small>
             </blockquote>
             <hr>
-            <div class="row">
-              <div class="col-xs-6">
+            <div class="row mb-4">
+              <div class="col-sm-6">
                 <ul>
                   <li>Normal Unordered List</li>
                   <li>Can Also Work
@@ -281,7 +281,7 @@
                   <li>Adds Bullets to Page</li>
                 </ul>
               </div>
-              <div class="col-xs-6">
+              <div class="col-sm-6">
                 <ol>
                   <li>Normal Ordered List</li>
                   <li>Can Also Work
@@ -299,16 +299,15 @@
           </div>
         </div>
       </div>
-      <div class="panel panel-default" id="forms">
-        <div class="panel-heading">Forms
-        </div>
-        <div class="panel-body">
+      <div class="card" id="forms">
+        <h4 class="card-header">Forms</h4>
+        <div class="card-body">
         <form>
           <fieldset>
             <legend>Legend</legend>
             <div class="form-group">
               <label for="exampleInputEmail">Email address</label>
-              <input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword">Password</label>
@@ -316,74 +315,74 @@
             </div>
             <div class="form-group">
               <label for="exampleInputFile">File input</label>
-              <input type="file" id="exampleInputFile">
-              <p class="help-block">Example block-level help text here.</p>
+              <input type="file" class="form-control-file" id="exampleInputFile">
+              <p class="form-text text-muted">Example block-level help text here.</p>
             </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox">Check me out</label>
+            <div class="form-group form-check">
+              <input type="checkbox" id="exampleCheck1">
+              <label type="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-secondary">Submit</button>
           </fieldset>
         </form>
         <hr>
         <form class="form-inline">
-          <input type="text" class="form-control" placeholder="Email" style="width: 200px;">
-          <input type="password" class="form-control" placeholder="Password" style="width: 200px;">
-          <div class="checkbox">
-            <label>
-              <input type="checkbox">Remember me</label>
+          <input type="text" class="form-control mr-2" placeholder="Email" style="width: 200px;">
+          <input type="password" class="form-control mr-2" placeholder="Password" style="width: 200px;">
+          <div class="form-check mr-2">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label">Remember me</label>
           </div>
-          <button type="submit" class="btn btn-default">Sign in</button>
+          <button type="submit" class="btn btn-secondary">Sign in</button>
         </form>
         <hr>
         <form class="form-horizontal">
-          <div class="form-group">
-            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-            <div class="col-lg-10">
-              <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+          <div class="form-group row">
+            <label for="inputEmail1" class="col-xl-2 col-form-label">Email</label>
+            <div class="col-xl-10">
+              <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
             </div>
           </div>
-          <div class="form-group has-warning">
-            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-            <div class="col-lg-10">
-              <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+          <div class="form-group row has-warning">
+            <label for="inputEmail2" class="col-xl-2 col-form-label">Email</label>
+            <div class="col-xl-10">
+              <input type="email" class="form-control" id="inputEmail2" placeholder="Email">
             </div>
           </div>
-          <div class="form-group has-error">
-            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-            <div class="col-lg-10">
-              <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+          <div class="form-group row has-error">
+            <label for="inputEmail3" class="col-xl-2 col-form-label">Email</label>
+            <div class="col-xl-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
             </div>
           </div>
-          <div class="form-group has-success">
-            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-            <div class="col-lg-10">
-              <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+          <div class="form-group row has-success">
+            <label for="inputEmail4" class="col-xl-2 col-form-label">Email</label>
+            <div class="col-xl-10">
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
             </div>
           </div>
-          <div class="form-group">
-            <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-            <div class="col-lg-10">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-xl-2 col-form-label">Password</label>
+            <div class="col-xl-10">
               <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox">Remember me</label>
+              <div class="form-check mt-1 mb-1">
+                <input class="form-check-input" type="checkbox" id="horizontal-check">
+                <label class="form-check-label" for="horizontal-check">Remember me</label>
               </div>
-              <button type="submit" class="btn btn-default">Sign in</button>
+              <button type="submit" class="btn btn-secondary">Sign in</button>
             </div>
           </div>
         </form>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="panel panel-default" id="buttons">
-            <div class="panel-heading">Buttons
-            </div>
-            <div class="panel-body">
+      <div class="row mb-4">
+        <div class="col-xl-12">
+          <div class="card" id="buttons">
+            <h4 class="card-header">Buttons
+            </h4>
+            <div class="card-body">
               <p>
-                <button type="button" class="btn btn-lg btn-default">Default</button>
+                <button type="button" class="btn btn-lg btn-secondary">Default</button>
                 <button type="button" class="btn btn-lg btn-primary">Primary</button>
                 <button type="button" class="btn btn-lg btn-success">Success</button>
                 <button type="button" class="btn btn-lg btn-info">Info</button>
@@ -393,11 +392,11 @@
               </p>
               <p>
               <legend>Hexagonal button proof of concept:</legend>
-                <span class="hb hb-sm hb-flickr"><i class="glyphicon glyphicon-flash"></i></span>
+                <span class="hb hb-sm hb-flickr"><i class="fas fa-bolt"></i></span>
               </p>
               <p>
               <legend>Sizes</legend>
-                <button type="button" class="btn btn-default">Default</button>
+                <button type="button" class="btn btn-secondary">Default</button>
                 <button type="button" class="btn btn-primary">Primary</button>
                 <button type="button" class="btn btn-success">Success</button>
                 <button type="button" class="btn btn-info">Info</button>
@@ -406,7 +405,7 @@
                 <button type="button" class="btn btn-link">Link</button>
               </p>
               <p>
-                <button type="button" class="btn btn-sm btn-default">Default</button>
+                <button type="button" class="btn btn-sm btn-secondary">Default</button>
                 <button type="button" class="btn btn-sm btn-primary">Primary</button>
                 <button type="button" class="btn btn-sm btn-success">Success</button>
                 <button type="button" class="btn btn-sm btn-info">Info</button>
@@ -415,305 +414,282 @@
                 <button type="button" class="btn btn-sm btn-link">Link</button>
               </p>
               <p>
-                <button type="button" class="btn btn-xs btn-default">Default</button>
-                <button type="button" class="btn btn-xs btn-primary">Primary</button>
-                <button type="button" class="btn btn-xs btn-success">Success</button>
-                <button type="button" class="btn btn-xs btn-info">Info</button>
-                <button type="button" class="btn btn-xs btn-warning">Warning</button>
-                <button type="button" class="btn btn-xs btn-danger">Danger</button>
-                <button type="button" class="btn btn-xs btn-link">Link</button>
-              </p>
-              <p>
-                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-star"></span> Glyphicons!</button>
-                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></button>
-                <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
-                <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-info-sign"></span></button>
-                <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-flash"></span></button>
-                <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-ban-circle"></span></button>
-                <button type="button" class="btn btn-link"><span class="glyphicon glyphicon-arrow-right"></span></button>
+                <button type="button" class="btn btn-secondary"><span class="fas fa-star"></span> Icons!</button>
+                <button type="button" class="btn btn-primary"><span class="fas fa-edit"></span></button>
+                <button type="button" class="btn btn-success"><span class="fas fa-plus"></span></button>
+                <button type="button" class="btn btn-info"><span class="fas fa-info-circle"></span></button>
+                <button type="button" class="btn btn-warning"><span class="fas fa-bolt"></span></button>
+                <button type="button" class="btn btn-danger"><span class="fas fa-ban"></span></button>
+                <button type="button" class="btn btn-link"><span class="fas fa-arrow-right"></span></button>
               </p>
           </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="panel panel-default" id="dropdowns">
-            <div class="panel-heading">Dropdowns
-            </div>
-            <div class="panel-body clearfix">
-            <div class="dropdown">
+      <div class="row mb-4">
+        <div class="col-xl-3">
+          <div class="card" id="dropdowns">
+            <h4 class="card-header">Dropdowns</h4>
+            <div class="card-body clearfix">
               <!-- Link or button to toggle dropdown -->
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static;">
-                <li class="dropdown-header">Dropdown header</li>
-                <li class="disabled">
-                  <a tabindex="-1" href="#">Action</a>
-                </li>
-                <li>
-                  <a tabindex="-1" href="#">Another action</a>
-                </li>
-                <li>
-                  <a tabindex="-1" href="#">Something else here</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a tabindex="-1" href="#">Separated link</a>
-                </li>
-              </ul>
+              <div class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static;">
+                <h6 class="dropdown-header">Dropdown header</h6>
+                <a class="dropdown-item disabled" tabindex="-1" href="#">Action</a>
+                <a class="dropdown-item" tabindex="-1" href="#">Another action</a>
+                <a class="dropdown-item" tabindex="-1" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" tabindex="-1" href="#">Separated link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5">
+          <div class="card" id="input-groups">
+            <h4 class="card-header">Input Groups
+            </h4>
+            <div class="card-body">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button class="btn btn-secondary" type="button">Go!</button>
+              </div>
+              <input type="text" class="form-control" placeholder="Username">
+            </div><br>
+            <div class="input-group input-group-lg">
+              <input type="text" class="form-control" placeholder="a large input">
+              <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+              </div>
+            </div><br>
+            <div class="input-group input-group-sm">
+              <input type="text" class="form-control" placeholder="a small input">
+              <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+              </div>
+            </div><br>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+              <input type="text" class="form-control">
+              <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+              </div>
             </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-5">
-          <div class="panel panel-default" id="input-groups">
-            <div class="panel-heading">Input Groups
-            </div>
-            <div class="panel-body">
-            <div class="input-group">
-              <span class="input-group-btn">                <button class="btn btn-default" type="button">Go!</button>              </span><input type="text" class="form-control" placeholder="Username">
-            </div><br>
-            <div class="input-group">
-              <input type="text" class="form-control input-lg" placeholder="a large input">
-              <span class="input-group-addon input-large">.00</span>
-            </div><br>
-            <div class="input-group">
-              <input type="text" class="form-control input-sm" placeholder="a small input">
-              <span class="input-group-addon input-large">.00</span>
-            </div><br>
-            <div class="input-group">
-              <span class="input-group-addon">$</span><input type="text" class="form-control">
-              <span class="input-group-addon">.00</span>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="panel panel-default" id="images">
-            <div class="panel-heading">Images
-            </div>
-            <div class="panel-body">
-            <p><img src="http://placehold.it/100x100" class="img-rounded">
-              <img src="http://placehold.it/100x100" class="img-circle">
+        <div class="col-xl-4">
+          <div class="card" id="images">
+            <h4 class="card-header">Images
+            </h4>
+            <div class="card-body">
+            <p><img src="http://placehold.it/100x100" class="rounded">
+              <img src="http://placehold.it/100x100" class="rounded-circle">
               <img src="http://placehold.it/100x100" class="img-thumbnail"></p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="panel panel-default" id="navs">
-            <div class="panel-heading">Navs
-            </div>
-            <div class="panel-body clearfix">
+      <div class="row mb-4">
+        <div class="col-xl-6">
+          <div class="card" id="navs">
+            <h4 class="card-header">Navs</h4>
+            <div class="card-body clearfix">
             <ul class="nav nav-tabs">
-              <li class="active">
-                <a href="#">Home</a>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
               </li>
-              <li>
-                <a href="#">About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
               </li>
             </ul>
             <p></p>
             <p></p>
             <ul class="nav nav-pills">
-              <li class="active">
-                <a href="#">Home</a>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
               </li>
-              <li>
-                <a href="#">About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
               </li>
             </ul>
             <p></p>
             <p></p>
-            <ul class="nav nav-stacked nav-pills">
-              <li class="active">
-                <a href="#">Home</a>
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
               </li>
-              <li>
-                <a href="#">About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
               </li>
             </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-12" id="navbar">
-          <div class="panel panel-default">
-            <div class="panel-heading">Navbars
-            </div>
-            <div class="panel-body">
+        <div class="col-xl-12" id="navbar">
+          <div class="card">
+            <h4 class="card-header">Navbars
+            </h4>
+            <div class="card-body">
             <p></p>
-            <div class="navbar navbar-default">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand">Standard</a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light">
+              <a href="#" class="navbar-brand">Standard</a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default MusicBrainz">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/MusicBrainz_logo_mini.svg" alt="MusicBrainz"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light MusicBrainz">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/MusicBrainz_logo_mini.svg" alt="MusicBrainz"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default MetaBrainz">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/MetaBrainz_logo_mini.svg" alt="MetaBrainz"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light MetaBrainz">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/MetaBrainz_logo_mini.svg" alt="MetaBrainz"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default CritiqueBrainz">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/CritiqueBrainz_logo_mini.svg" alt="CritiqueBrainz"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light CritiqueBrainz">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/CritiqueBrainz_logo_mini.svg" alt="CritiqueBrainz"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default AcousticBrainz">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/AcousticBrainz_logo_mini.svg" alt="AcousticBrainz"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light AcousticBrainz">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/AcousticBrainz_logo_mini.svg" alt="AcousticBrainz"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default BookBrainz">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/BookBrainz_logo_mini.svg" alt="BookBrainz"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light BookBrainz">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/BookBrainz_logo_mini.svg" alt="BookBrainz"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default Picard">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/Picard_logo_mini.svg" alt="Picard"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light Picard">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/Picard_logo_mini.svg" alt="Picard"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar navbar-default CoverArtArchive">
-              <div class="navbar-header">
-                <a href="#" class="navbar-brand logo"><img src="../dist/assets/CoverArtArchive_logo_mini.svg" alt="CoverArtArchive"></img></a>
-              </div>
+            <div class="navbar navbar-expand-lg navbar-light CoverArtArchive">
+              <a href="#" class="navbar-brand logo"><img src="../dist/assets/CoverArtArchive_logo_mini.svg" alt="CoverArtArchive"></img></a>
               <div class="navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="support-link"><a href="/supporters/account-type">Support us</a></li>
+                <ul class="navbar-nav">
+                    <li class="support-link"><a class="nav-link" href="/supporters/account-type">Support us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="navbar">
+            <div class="navbar navbar-expand-lg navbar-light">
               <div class="collapse navbar-collapse">
-                <a class="btn btn-primary navbar-btn">Navbar Button</a>
-                <p class="navbar-text navbar-right">Navbar Text</p>
+                <form class="form-inline mr-auto">
+                  <button class="btn btn-primary">Navbar Button</button>
+                </form>
+                <span class="navbar-text">Navbar Text</span>
               </div>
             </div>
             
@@ -721,76 +697,73 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="panel panel-default" id="pagination">
-            <div class="panel-heading">Pagination
-            </div>
-            <div class="panel-body">
+      <div class="row mb-4">
+        <div class="col-xl-6">
+          <div class="card" id="pagination">
+            <h4 class="card-header">Pagination
+            </h4>
+            <div class="card-body">
             <ul class="pagination" style="margin-right: 10px;">
-              <li>
-                <a href="#">Prev</a>
+              <li class="page-item">
+                <a class="page-link" href="#">Prev</a>
               </li>
-              <li>
-                <a href="#">1</a>
+              <li class="page-item">
+                <a class="page-link" href="#">1</a>
               </li>
-              <li>
-                <a href="#">2</a>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
               </li>
-              <li>
-                <a href="#">3</a>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
               </li>
-              <li>
-                <a href="#">4</a>
+              <li class="page-item">
+                <a class="page-link" href="#">4</a>
               </li>
-              <li>
-                <a href="#">Next</a>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
               </li>
             </ul>
             <ul class="pagination pagination-lg">
-              <li>
-                <a href="#">Prev</a>
+              <li class="page-item">
+                <a class="page-link" href="#">Prev</a>
               </li>
-              <li>
-                <a href="#">1</a>
+              <li class="page-item">
+                <a class="page-link" href="#">1</a>
               </li>
-              <li>
-                <a href="#">2</a>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
               </li>
-              <li>
-                <a href="#">3</a>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
               </li>
-              <li>
-                <a href="#">4</a>
+              <li class="page-item">
+                <a class="page-link" href="#">4</a>
               </li>
-              <li>
-                <a href="#">Next</a>
-              </li>
-            </ul>
-            <ul class="pager">
-              <li>
-                <a href="#">Prev</a>
-              </li>
-              <li>
-                <a href="#">Next</a>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
               </li>
             </ul>
           </div>
         </div>
-          <div class="panel panel-default" id="labels">
-            <div class="panel-heading">Labels and Badges
-            </div>
-            <div class="panel-body">
-            <h3><span class="label label-default">Default</span>&nbsp;<span class="label label-success">Success</span>&nbsp;<span class="label label-warning">Warning</span>&nbsp;<span class="label label-danger">Danger</span>&nbsp;<span class="label label-info">Info</span></h3>
-            <p class="lead"><a href="#">Inbox <span class="badge">42</span></a></p>
+          <div class="card" id="badges">
+            <h4 class="card-header">Labels and Badges
+            </h4>
+            <div class="card-body">
+            <h3>
+              <span class="badge badge-dark">Default</span>&nbsp;
+              <span class="badge badge-success">Success</span>&nbsp;
+              <span class="badge badge-warning">Warning</span>&nbsp;
+              <span class="badge badge-danger">Danger</span>&nbsp;
+              <span class="badge badge-info">Info</span></h3>
+            <p class="lead"><a href="#">Inbox <span class="badge badge-pill badge-gray">42</span></a></p>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="panel panel-default" id="alerts">
-            <div class="panel-heading">Alerts
-            </div>
-            <div class="panel-body">
+        <div class="col-xl-6">
+          <div class="card" id="alerts">
+            <h4 class="card-header">Alerts
+            </h4>
+            <div class="card-body">
             <div>
               <div class="alert alert-danger">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -818,50 +791,50 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="panel panel-default" id="progress">
-            <div class="panel-heading">Progress Bars
-            </div>
-            <div class="panel-body">
+      <div class="row mb-4">
+        <div class="col-xl-6">
+          <div class="card" id="progress">
+            <h4 class="card-header">Progress Bars
+            </h4>
+            <div class="card-body">
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
               </div>
               <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
               </div>
               <div class="progress">
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
               </div>
               <div class="progress">
-                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
               </div>
               <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
               </div>
               <div class="progress">
-                <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
-                <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
-                <div class="progress-bar progress-bar-danger" style="width: 10%"><span class='sr-only'>10% Complete (danger)</span></div>
+                <div class="progress-bar bg-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+                <div class="progress-bar bg-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+                <div class="progress-bar bg-danger" style="width: 10%"><span class='sr-only'>10% Complete (danger)</span></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="panel panel-default" id="media-object">
-            <div class="panel-heading">Media Object
-            </div>
-            <div class="panel-body">
-            <p></p>
+        <div class="col-xl-6">
+          <div class="card" id="media-object">
+            <h4 class="card-header">Media Object
+            </h4>
+            <div class="card-body">
+            <p><em>Placeholder images from <a href="https://placeholder.com/">placeholder.com</a></em></p>
             <div class="media">
-              <a class="pull-left" href="#">    <img class="media-object img-circle" src="http://placezombie.com/64x64">  </a>
+              <a class="mr-3" href="#">    <img class="rounded-circle" src="http://placehold.it/64x64">  </a>
               <div class="media-body">
-                <h4 class="media-heading">Media heading</h4>
+                <h4>Media heading</h4>
                 <p>This is the content for your media.</p>
-                <div class="media">
-                  <a class="pull-left" href="#">    <img class="media-object img-circle" src="http://placezombie.com/64x64">  </a>
+                <div class="media mt-3">
+                  <a class="mr-3" href="#">    <img class="rounded-circle" src="http://placehold.it/64x64">  </a>
                   <div class="media-body">
-                    <h4 class="media-heading">Media heading</h4>
+                    <h4>Media heading</h4>
                     <p>This is the content for your media.</p>
                   </div>
                 </div>
@@ -871,8 +844,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-3">
+      <div class="row mb-4">
+        <div class="col-xl-3">
           <ul class="list-group">
             <li class="list-group-item">Cras justo odio</li>
             <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -881,12 +854,16 @@
             <li class="list-group-item">Vestibulum at eros</li>
           </ul>
         </div>
-        <div class="col-lg-3">
+        <div class="col-xl-3">
           <div class="list-group">
-            <a href="#" class="list-group-item active">          Cras justo odio        </a><a href="#" class="list-group-item">Dapibus ac facilisis in        </a><a href="#" class="list-group-item">Morbi leo risus        </a><a href="#" class="list-group-item">Porta ac consectetur ac        </a><a href="#" class="list-group-item">Vestibulum at eros        </a>
+            <a href="#" class="list-group-item list-group-item-action active">Cras justo odio</a>
+            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-xl-3">
           <ul class="hexagonBullet" style="padding: 0;">
             <li >Hexagonal bullet points, anyone?</li>
             <li >Dapibus ac facilisis in</li>
@@ -895,82 +872,93 @@
             <li >Vestibulum at eros</li>
           </ul>
         </div>
-        <div class="col-lg-3">
+        <div class="col-xl-3">
           <div class="list-group">
-            <a href="#" class="list-group-item active">          <h4 class="list-group-item-heading">List group item heading</h4>          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>        </a><a href="#" class="list-group-item">          <h4 class="list-group-item-heading">List group item heading</h4>          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>        </a><a href="#" class="list-group-item">          <h4 class="list-group-item-heading">List group item heading</h4>          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>        </a>
+            <a href="#" class="list-group-item list-group-item-action active">
+              <h5 class="mb-1">List group item heading</h5>
+              <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <h5 class="mb-1">List group item heading</h5>
+              <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <h5 class="mb-1">List group item heading</h5>
+              <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="panel panel-primary" id="panels">
-            <div class="panel-heading">This is a header
-            </div>
-            <p class="panel-body">This is a panel</p>
-            <div class="panel-footer">This is a footer
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="panel panel-success">
-            <div class="panel-heading">This is a header
-            </div>
-            <div class="panel-body">This is a panel</div>
-            <div class="panel-footer">This is a footer
+      <div class="row mb-4">
+        <div class="col-xl-3">
+          <div class="card card-primary" id="panels">
+            <h4 class="card-header">This is a header
+            </h4>
+            <p class="card-body">This is a panel</p>
+            <div class="card-footer">This is a footer
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="panel panel-danger">
-            <div class="panel-heading hexagonBullet">This is a header with a hexagon bullet
-            </div>
-            <div class="panel-body">This is a panel</div>
-            <div class="panel-footer">This is a footer
+        <div class="col-xl-3">
+          <div class="card card-success">
+            <h4 class="card-header">This is a header
+            </h4>
+            <div class="card-body">This is a panel</div>
+            <div class="card-footer">This is a footer
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="panel panel-warning">
-            <div class="panel-heading">This is a header
+        <div class="col-xl-3">
+          <div class="card card-danger">
+            <h4 class="card-header hexagonBullet">This is a header with a hexagon bullet
+            </h4>
+            <div class="card-body">This is a panel</div>
+            <div class="card-footer">This is a footer
             </div>
-            <div class="panel-body">This is a panel</div>
-            <div class="panel-footer">This is a footer
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="card card-warning">
+            <h4 class="card-header">This is a header
+            </h4>
+            <div class="card-body">This is a panel</div>
+            <div class="card-footer">This is a footer
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="panel panel-info">
-            <div class="panel-heading">This is a header
-            </div>
-            <p class="panel-body">This is a panel</p>
-            <div class="panel-footer">This is a footer
+      <div class="row mb-4">
+        <div class="col-xl-3">
+          <div class="card card-info">
+            <h4 class="card-header">This is a header
+            </h4>
+            <p class="card-body">This is a panel</p>
+            <div class="card-footer">This is a footer
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="panel panel-default">
-            <div class="panel-heading">This is a header
-            </div>
-            <div class="panel-body">This is a panel</div>
+        <div class="col-xl-3">
+          <div class="card card-secondary">
+            <h4 class="card-header">This is a header
+            </h4>
+            <div class="card-body">This is a panel</div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">First Item</li>
               <li class="list-group-item">Second Item</li>
               <li class="list-group-item">Third Item</li>
             </ul>
-            <div class="panel-footer">This is a footer
+            <div class="card-footer">This is a footer
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="well" id="wells">Default Well
+        <div class="col-xl-3">
+          <div class="card card-body bg-light" id="wells">Default Well
           </div>
-          <div class="well well-sm">Small Well
+          <div class="card card-body bg-light py-1">Small Well
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="well well-lg">Large Padding Well
+        <div class="col-xl-3">
+          <div class="card card-body bg-light py-4">Large Padding Well
           </div>
         </div>
       </div>

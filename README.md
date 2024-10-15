@@ -1,3 +1,3 @@
-# Lobes
+# Lobes 4
 
-**Lobes** is a Bootstrap 3+ theme developed by **{Monkey.Do}** for **MusicBrainz**
+**Lobes 4** is a Bootstrap 4 theme developed by **{Monkey.Do}** and **Ben Ockmore** for **MusicBrainz**
