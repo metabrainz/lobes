@@ -1,7 +1,7 @@
 {
-  "author": "Ben Ockmore",
-  "name": "lobes4",
-  "description": "Lobes 4 is a Bootstrap 4 theme developed by Monkey.Do and Ben Ockmore for MetaBrainz",
+  "author": "MetaBrainz",
+  "name": "lobes5",
+  "description": "Lobes5 is a Bootstrap 5 theme developed by Monkey.Do and Ben Ockmore for MetaBrainz",
   "version": "5.0.0",
   "devDependencies": {
     "bootstrap": "^5.3.3",
