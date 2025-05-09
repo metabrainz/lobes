@@ -212,19 +212,6 @@ label {
     }
 }
 
-ul.hexagonBullet li:before,
-.hexagonBullet:not(ul):before{
-  content: "\2B22";
-  margin-right: 0.5em;
-  font-size: 0.5em;
-  opacity: 0.42;
-  vertical-align: middle;
-}
-
-ul.hexagonBullet {
-  list-style: none;
-}
-
 .navbar-brand {
     padding-top: 14px;
 }
