@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/metabrainz/lobes.git"
+    "url": "git+https://github.com/metabrainz/lobes.git"
   },
   "license": "Apache-2.0",
   "homepage": "https://metabrainz.github.io/lobes"
