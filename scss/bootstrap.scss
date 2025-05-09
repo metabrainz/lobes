@@ -57,8 +57,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 
 .card {
-    background-color: inherit !important;
-    border-color: $card-border-color !important;
+    background-color: inherit;
+    border-color: $card-border-color;
 }
 .card-body {
     color: $body-color !important;
@@ -212,19 +212,6 @@ label {
     }
 }
 
-ul.hexagonBullet li:before,
-.hexagonBullet:not(ul):before{
-  content: "\2B22";
-  margin-right: 0.5em;
-  font-size: 0.5em;
-  opacity: 0.42;
-  vertical-align: middle;
-}
-
-ul.hexagonBullet {
-  list-style: none;
-}
-
 .navbar-brand {
     padding-top: 14px;
 }
@@ -236,6 +223,10 @@ ul.hexagonBullet {
 .card.bg-light {
     background-color: $gray-200 !important;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.bg-light {
+    background-color: map-get($theme-colors,"light");
 }
 
 @each $color, $value in $theme-colors {
@@ -250,8 +241,4 @@ ul.hexagonBullet {
 
 .list-group {
     margin-bottom: 20px;
-}
-
-a:visited.dropdown-item {
-	color: $gray-800 !important;
 }

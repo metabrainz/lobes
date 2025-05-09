@@ -76,7 +76,9 @@ $theme-colors: (
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
-  "danger":     $danger
+  "danger":     $danger,
+  "light":      $gray-400,
+  "dark":       $gray-900
 ) !default;
 
 $min-contrast-ratio: 2.5;
@@ -102,7 +104,8 @@ $btn-border-radius-sm:      0 !default;
 $btn-border-radius:         0 !default;
 $btn-border-width:          0px !default;
 $btn-outline-border-width:  1px !default;
-$card-spacer-x:             0.8750rem !default;
+$card-spacer-x:             1.25rem !default;
+$card-spacer-y:             1.25rem !default;
 $code-font-size:            90% !default;
 $font-size-base:            0.8750rem !default; // Default is 1rem ~ 16px - change to 0.875rem to get 14px
 $input-btn-focus-width:     6px !default;
@@ -123,10 +126,6 @@ $grid-gutter-width:         42px !default;
 $navbar-padding-y:          0.625rem !default;
 $navbar-padding-horizontal: floor(calc($grid-gutter-width / 2));
 $paragraph-margin-bottom:   0.625rem !default;
-$card-spacer-y:             1.25rem;
-$card-spacer-x:             0.9375rem;
-$alert-padding-y:           0.9375rem;
-$alert-padding-x:           0.9375rem;
 
 $h1-font-size:                $font-size-base * 2.57 !default;
 $h2-font-size:                $font-size-base * 2.14 !default;
